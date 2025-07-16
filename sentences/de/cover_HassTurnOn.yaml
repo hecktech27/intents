@@ -21,7 +21,7 @@ intents:
           - (<machen>|<fahren>) <area_floor> (<abdeckung>|<tor>|<garage>) <auf>
           - (<machen>|<fahren>) (<abdeckung>|<tor>|<garage>) <area_floor> <auf>
           - (<abdeckung>|<tor>|<garage>) <area_floor> <auf>[ (<machen>|<fahren>)]
-          - <area_floor> (<abdeckung>|<tor>|<garage>) <auf> [(<machen>|<fahren>)]
+          - <area_floor> (<abdeckung>|<tor>|<garage>) <auf>[ (<machen>|<fahren>)]
         slots:
           domain: cover
         response: cover
