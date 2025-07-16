@@ -35,7 +35,7 @@ intents:
           - <öffnen> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>]
           - (<machen>|<fahren>)[ <area_floor>] (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>
           - (<machen>|<fahren>) (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>] <auf>
-          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf> [(<machen>|<fahren>)]
+          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>[ (<machen>|<fahren>)]
           - (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) (<auf> [(<machen>|<fahren>)]|<öffnen>)
         slots:
           domain: cover
