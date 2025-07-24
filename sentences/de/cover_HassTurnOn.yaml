@@ -30,12 +30,12 @@ intents:
           - <öffnen> <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)
           - <öffnen> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <area_floor>
           - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <öffnen>
+          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>[ (<machen>|<fahren>)]
           - (<machen>|<fahren>) <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>
           - (<machen>|<fahren>) (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <area_floor> <auf>
           - <öffnen> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>]
           - (<machen>|<fahren>)[ <area_floor>] (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>
           - (<machen>|<fahren>) (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>] <auf>
-          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>[ (<machen>|<fahren>)]
           - (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) (<auf> [(<machen>|<fahren>)]|<öffnen>)
         slots:
           domain: cover
