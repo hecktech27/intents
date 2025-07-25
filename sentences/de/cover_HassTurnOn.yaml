@@ -16,7 +16,7 @@ intents:
       - sentences:
           - öffne <area_floor> (<abdeckung>|<tor>|<garage>)
           - öffne (<abdeckung>|<tor>|<garage>) <area_floor>
-          - <area_floor> (<abdeckung>|<tor>|<garage>) <öffnen>
+          - <area_floor> (<abdeckung>|<tor>|<garage>) <öffnen_end_of_sentence>
           - (<abdeckung>|<tor>|<garage>) <area_floor> <öffnen_end_of_sentence>
           - (<machen>|<fahren>) <area_floor> (<abdeckung>|<tor>|<garage>) <auf>
           - (<machen>|<fahren>) (<abdeckung>|<tor>|<garage>) <area_floor> <auf>
@@ -29,14 +29,14 @@ intents:
       - sentences:
           - öffne <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)
           - öffne (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <area_floor>
-          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <öffnen>
+          - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <öffnen_end_of_sentence>
           - <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>[ (machen|fahren)]
           - (<machen>|<fahren>) <area_floor> (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>
           - (<machen>|<fahren>) (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <area_floor> <auf>
           - öffne (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>]
           - (<machen>|<fahren>)[ <area_floor>] (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) <auf>
           - (<machen>|<fahren>) (<alle_abdeckungen>|<alle_tore>|<alle_garagen>)[ <area_floor>] <auf>
-          - (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) (<auf> [(machen|fahren)]|<öffnen>)
+          - (<alle_abdeckungen>|<alle_tore>|<alle_garagen>) (<auf> [(machen|fahren)]|<öffnen_end_of_sentence>)
         slots:
           domain: cover
         response: open_all
