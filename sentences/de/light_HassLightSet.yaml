@@ -4,7 +4,7 @@ intents:
     data:
       - sentences:
           - "<setze> [die ]Helligkeit[ von] <name>[ auf] <brightness>"
-          - "<stelle_optional_ein> [die ]Helligkeit[ von] <name>[ auf] <brightness>[ ein]"
+          - "<stelle> [die ]Helligkeit[ von] <name>[ auf] <brightness>[ ein]"
           - "[die ]Helligkeit[ von] <name>[ auf] <brightness>[ <setzen_end_of_sentence>]"
           - "dimme[ [die ]Helligkeit[ von]] <name>[ (auf|zu)] <brightness>"
           - "<name>[ (auf|zu)] <brightness>[ dimmen]"
@@ -14,7 +14,7 @@ intents:
         response: brightness
       - sentences:
           - "[<setze> ][die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <area>][ auf] <brightness>"
-          - "<stelle_optional_ein> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <area>][ auf] <brightness>[ ein]"
+          - "<stelle> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <area>][ auf] <brightness>[ ein]"
           - "[die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <area>] auf <brightness> <setzen_end_of_sentence>"
           - "dimme[ (<licht>|<lichter>|<alle_lichter>)][ <area>][ (auf|zu)] <brightness>"
           - "[<licht>|<lichter>|<alle_lichter>][ <area>][ (auf|zu)] <brightness> dimmen"
@@ -51,9 +51,9 @@ intents:
         # Max/Min brightness
       - sentences:
           - "<setze> <name> auf [(die|das) ]{brightness_level:brightness}[ (Helligkeit|Stufe)]"
-          - "<stelle_optional_ein> <name> auf [(die|das) ]{brightness_level:brightness}[ (Helligkeit|Stufe)][ ein]"
+          - "<stelle> <name> auf [(die|das) ]{brightness_level:brightness}[ (Helligkeit|Stufe)][ ein]"
           - "<setze> [die ]Helligkeit[ <von_dem>] <name> auf [(die|das) ]{brightness_level:brightness}[ Stufe]"
-          - "<stelle_optional_ein> [die ]Helligkeit[ <von_dem>] <name> auf [(die|das) ]{brightness_level:brightness}[ Stufe][ ein]"
+          - "<stelle> [die ]Helligkeit[ <von_dem>] <name> auf [(die|das) ]{brightness_level:brightness}[ Stufe][ ein]"
           - "[die ]Helligkeit[ <von_dem>] <name> auf [(die|das) ]{brightness_level:brightness}[ Stufe] <setzen_end_of_sentence>"
           - "<name> auf [(die|das) ]{brightness_level:brightness}[ (Helligkeit|Stufe)] <setzen_end_of_sentence>"
         requires_context:
