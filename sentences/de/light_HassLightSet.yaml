@@ -2,11 +2,12 @@ language: de
 intents:
   HassLightSet:
     data:
+      # brightness by name
       - sentences:
-          - "<setze> [die ]Helligkeit[ von] <name>[ auf] <brightness>"
-          - "<stelle> [die ]Helligkeit[ von] <name>[ auf] <brightness>[ ein]"
-          - "[die ]Helligkeit[ von] <name>[ auf] <brightness>[ <setzen_end_of_sentence>]"
-          - "dimme[ [die ]Helligkeit[ von]] <name>[ (auf|zu)] <brightness>"
+          - "<setze> [die ]Helligkeit[ (von|vom)] <name>[ auf] <brightness>"
+          - "<stelle> [die ]Helligkeit[ (von|vom)] <name>[ auf] <brightness>[ ein]"
+          - "[die ]Helligkeit[ (von|vom)] <name>[ auf] <brightness>[ (<setzen_end_of_sentence>|dimmen)]"
+          - "dimme[ [die ]Helligkeit[ (von|vom)]] <name> (auf|zu) <brightness>"
           - "<name>[ (auf|zu)] <brightness>[ dimmen]"
           - "<name> Helligkeit[ (auf|zu)] <brightness>"
         requires_context:
