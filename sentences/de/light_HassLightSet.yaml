@@ -23,17 +23,17 @@ intents:
       - sentences:
           - "[<setzen> ][die ]Helligkeit [<hier> ]auf <brightness>"
           - "[die ]Helligkeit [<hier> ]auf <brightness> dimmen"
-        expansion_rules:
-          hier: "(hier|im Raum)"
         response: "brightness"
         requires_context:
           area:
             slot: true
+
+      # color by name
       - sentences:
-          - "[<setzen> ][[die ]Farbe[ von] ]<name>[ auf] {color}"
-          - "(änder[e]|veränder[e]) [[die ]Farbe[ von] ]<name> zu {color}"
-          - "[[die ]Farbe[ von] ]<name>[ (auf|zu)] {color} <setzen_end_of_sentence>"
-          - "<name>[ Farbe][ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
+          - "[<setze> ][[die ]Farbe[ (von|vom)] ]<name>[ (auf|zu)] {color}"
+          - "<stelle> [[die ]Farbe[ (von|vom)] ]<name>[ auf] {color}[ ein]"
+          - "[[die ]Farbe[ (von|vom)] ]<name>[ (auf|zu)] {color} <setzen_end_of_sentence>"
+          - "<name> Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
           - "Lass[e] <name> {color}[ er]leuchten"
           - "<name> {color} <leuchten_lassen>"
           - "Färbe <name> {color}[ ein]"

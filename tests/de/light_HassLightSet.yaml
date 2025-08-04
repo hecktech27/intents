@@ -187,15 +187,19 @@ tests:
         area: Schlafzimmer
     response: "Helligkeit eingestellt"
 
+  # color by name
   - sentences:
       - Stelle die Schlafzimmerlampe auf grün
       - Schlafzimmerlampe auf grün
       - Schlafzimmerlampe zu grün
       - Schlafzimmerlampe grün
       - Schlafzimmerlampe Farbe grün
+      - Schlafzimmerlampe Farbe auf Grün ändern
       - Farbe Schlafzimmerlampe grün
+      - ändere die Farbe von der Schlafzimmerlampe auf grün
       - Stelle die Farbe von der Schlafzimmerlampe auf grün
       - Farbe der Schlafzimmerlampe auf grün
+      - Farbe von der Schlafzimmerlampe auf grün ändern
       - Farbe der Schlafzimmerlampe auf grün ändern
       - Farbe der Schlafzimmerlampe zu grün ändern
       - Ändere die Farbe der Schlafzimmerlampe zu grün
