@@ -47,11 +47,39 @@ intents:
         requires_context:
           domain: light
         response: color
+      # color all lights by area/floor
       - sentences:
-          - "[<setzen> ][(<licht>|[[die ]Farbe ][(<lichtes>|<lichter>|<alle_lichter>)])][ <area>][ auf] {color}"
-          - "(änder[e]|veränder[e]) (<licht>|[[die ]Farbe ][(<lichtes>|<lichter>|<alle_lichter>)])[ <area>] zu {color}"
-          - "[die ]Farbe[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <area>][ (auf|zu)] {color} <setzen_end_of_sentence>"
-          - "[<licht>|<lichtes>|<lichter>|<alle_lichter> ][<area> ] Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
-          - "[<licht>|<lichter>|<alle_lichter> ][<area> ][Farbe ]{color} <leuchten_lassen>"
-          - "Färbe[ (<licht>|<lichter>|<alle_lichter>)][ <area>] {color}[ ein]"
+          - "[<setze> ][(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>))] <area_floor>[ auf] {color}"
+          - "<stelle> [(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>))] <area_floor>[ auf] {color}[ ein]"
+          - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>)) <area_floor> zu {color}"
+          - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ (auf|zu)] {color} <setzen_end_of_sentence>"
+          - "[[(bei[ allen]|beim) ](<licht>|<lichter>|<alle_lichter>) ]<area_floor> [die ]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
+          - "[(<licht>|<lichter>|<alle_lichter>) ]<area_floor> [([in ]Farbe|in) ]{color} <leuchten_lassen>"
+          - "Färbe[ (<licht>|<lichter>|<alle_lichter>)] <area_floor> {color}[ ein]"
         response: color
+
+      # color all lights by satellite area
+      - sentences:
+          - "[(<setze>|mach[e]) ][(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)][ <hier>][ auf] {color}"
+          - "<stelle> [(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)][ <hier>][ auf] {color}[ ein]"
+          - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)[ <hier>] zu {color}"
+          - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>)][ <hier>][ (auf|zu)] {color} <setzen_end_of_sentence>"
+          - "[[(bei[ allen]|beim) ](<licht>|<lichter>) ][<hier> [die ]]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
+          - "[(<licht>|<lichter>) ][<hier> ][([in ]Farbe|in) ]{color} <leuchten_lassen>"
+          - "Färbe (<licht>|<lichter>)[ <hier>] {color}[ ein]"
+          - "Farbe <licht>[ <hier>] {color}"
+          - "{color}"
+
+          # <alle lichter> + <hier>
+          - "[(<setze>|mach[e]) ]([die ]Farbe (<alle_lichter>)|<alle_lichter>) <hier>[ auf] {color}"
+          - "<stelle> ([die ]Farbe (<alle_lichter>)|<alle_lichter>) <hier>[ auf] {color}[ ein]"
+          - "(änder[e]|veränder[e]) ([die ]Farbe (<alle_lichter>)|<alle_lichter>) <hier> zu {color}"
+          - "[die ]Farbe <alle_lichter> <hier>[ (auf|zu)] {color} <setzen_end_of_sentence>"
+          - "(bei allen (Lichter|Lampen|Leuchten|Beleuchtungen)|<alle_lichter>) <hier> [die ]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
+          - "<alle_lichter> <hier> [([in ]Farbe|in) ]{color} <leuchten_lassen>"
+          - "Färbe <alle_lichter> <hier> {color}[ ein]"
+          - "Farbe <alle_lichter> <hier> {color}"
+        response: "color"
+        requires_context:
+          area:
+            slot: true
