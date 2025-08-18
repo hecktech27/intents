@@ -24,13 +24,6 @@ intents:
         response: brightness
       # brightness by area/floor
       - sentences:
-#          - "[<setze> ][die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ auf] (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe])"
-#          - "<stelle> [die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ auf] (<brightness>|[ (die|das)]{brightness_level:brightness}[ Stufe])[ ein]"
-#          - "[die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor> auf (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe]) (<setzen_end_of_sentence>|dimmen)"
-#          - "dimme[ (<licht>|<lichter>|<alle_lichter>)] <area_floor> (auf|zu) (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe])"
-#          - "[<licht>|<lichter>|<alle_lichter>] <area_floor> (auf|zu) (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe]) dimmen"
-#          - "<area_floor> [die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>)][ auf] (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe])[ (<setzen_end_of_sentence>|dimmen)]"
-
           - "[<setze> ][die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ auf] <brightness>"
           - "<stelle> [die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ auf] <brightness>[ ein]"
           - "[die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor> auf <brightness> <setzen_end_of_sentence>"
@@ -65,14 +58,6 @@ intents:
         response: color
       # color by area/floor
       - sentences:
-#          - "[<setze> ][(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>))] <area_floor>[ auf] {color}"
-#          - "<stelle> [(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>))] <area_floor>[ auf] {color}[ ein]"
-#          - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|(<lichter>|<alle_lichter>)) <area_floor> zu {color}"
-#          - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ (auf|zu)] {color} <setzen_end_of_sentence>"
-#          - "[[(bei[ allen]|beim) ](<licht>|<lichter>|<alle_lichter>) ]<area_floor> [die ]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
-#          - "[(<licht>|<lichter>|<alle_lichter>) ]<area_floor> [([in ]Farbe|in) ]{color} <leuchten_lassen>"
-#          - "Färbe[ (<licht>|<lichter>|<alle_lichter>)] <area_floor> {color}[ ein]"
-
           - "[<setzen> ][(<licht>|[[die ]Farbe ][(<lichtes_mit_artikel>|<lichter>|<alle_lichter>)])] <area_floor>[ auf] {color}"
           - "(änder[e]|veränder[e]) (<licht>|[[die ]Farbe ][(<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]) <area_floor> zu {color}"
           - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ (auf|zu)] {color} <setzen_end_of_sentence>"
