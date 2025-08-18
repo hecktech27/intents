@@ -35,11 +35,11 @@ intents:
       - sentences:
           - "[<setzen> ][die ]Helligkeit [<hier> ]auf <brightness>"
           - "[die ]Helligkeit [<hier> ]auf <brightness> dimmen"
-          - "[<setze> ][die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ auf] <brightness>"
-          - "<stelle> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ auf] <brightness>[ ein]"
-          - "[die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)] auf <brightness> <setzen_end_of_sentence>"
-          - "dimme[ (<licht>|<lichter>|<alle_lichter>)][ (auf|zu)] <brightness>"
-          - "[<licht>|<lichter>|<alle_lichter> ](auf|zu) <brightness> dimmen"
+          - "[<setze> ][die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ auf] <brightness>"
+          - "<stelle> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ auf] <brightness>[ ein]"
+          - "[die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>] auf <brightness> (<setzen_end_of_sentence>|dimmen)"
+          - "dimme[ (<licht>|<lichter>|<alle_lichter>)][ <hier>][ (auf|zu)] <brightness>"
+          - "[<licht>|<lichter>|<alle_lichter> ][<hier> ](auf|zu) <brightness> dimmen"
 
         #          - "[<setze> ][die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>)][ <hier>][ auf] (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe])"
         #          - "<stelle> [die ]Helligkeit[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>)][ <hier>] auf (<brightness>|[(die|das) ]{brightness_level:brightness}[ Stufe])[ ein]"
