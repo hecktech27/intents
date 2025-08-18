@@ -37,7 +37,7 @@ intents:
           - "<stelle> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ auf] <brightness>[ ein]"
           - "[die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>] auf <brightness> (<setzen_end_of_sentence>|dimmen)"
           - "dimme[ (<licht>|<lichter>|<alle_lichter>)][ <hier>][ (auf|zu)] <brightness>"
-          - "[<licht>|<lichter>|<alle_lichter> ][<hier> ](auf|zu) <brightness> dimmen"
+          - "[(<licht>|<lichter>|<alle_lichter>) ][<hier> ](auf|zu) <brightness> dimmen"
         response: "brightness"
         requires_context:
           area:
