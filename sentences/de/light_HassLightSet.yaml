@@ -67,7 +67,7 @@ intents:
         response: color
       # color by satellite area
       - sentences:
-          - "[<setzen> ][(<licht>|[[die ]Farbe ][(<lichtes>|<lichter>|<alle_lichter>)])][ <hier>][ auf] {color}"
+          - "[<setzen> ][(<licht>|[[die ]Farbe ][(<lichtes>|<lichter>|<alle_lichter>)]) ][<hier> ][auf ] {color}"
           - "(änder[e]|veränder[e]) (<licht>|[[die ]Farbe ][(<lichtes>|<lichter>|<alle_lichter>)])[ <hier>] zu {color}"
           - "[die ]Farbe[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ (auf|zu)] {color} <setzen_end_of_sentence>"
           - "[(<licht>|<lichtes>|<lichter>|<alle_lichter>) ][<hier> ] Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
