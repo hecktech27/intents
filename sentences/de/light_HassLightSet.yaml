@@ -73,6 +73,16 @@ intents:
           - "[(<licht>|<lichtes>|<lichter>|<alle_lichter>) ] Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
           - "[(<licht>|<lichter>|<alle_lichter>) ][Farbe ]{color} <leuchten_lassen>"
           - "Färbe (<licht>|<lichter>|<alle_lichter>) {color}[ ein]"
+
+        #          - "[(<setze>|mach[e]) ][(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)][ <hier>][ auf] {color}"
+        #          - "<stelle> [(<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)][ <hier>][ auf] {color}[ ein]"
+        #          - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe[ (<lichtes_mit_artikel>|<lichter>)]|<lichter>)[ <hier>] zu {color}"
+        #          - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>)][ <hier>][ (auf|zu)] {color} <setzen_end_of_sentence>"
+        #          - "[[(bei[ allen]|beim) ](<licht>|<lichter>) ][<hier> [die ]]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
+        #          - "[(<licht>|<lichter>) ][<hier> ][([in ]Farbe|in) ]{color} <leuchten_lassen>"
+        #          - "Färbe (<licht>|<lichter>)[ <hier>] {color}[ ein]"
+        #          - "Farbe <licht>[ <hier>] {color}"
+        #          - "{color}"
         response: "color"
         requires_context:
           area:
