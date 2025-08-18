@@ -33,8 +33,6 @@ intents:
         response: brightness
       # brightness by satellite area
       - sentences:
-          #          - "[<setzen> ][die ]Helligkeit [<hier> ]auf <brightness>"
-          #          - "[die ]Helligkeit [<hier> ]auf <brightness> dimmen"
           - "[<setze> ][die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ auf] <brightness>"
           - "<stelle> [die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>][ auf] <brightness>[ ein]"
           - "[die ]Helligkeit[ (<licht>|<lichtes>|<lichter>|<alle_lichter>)][ <hier>] auf <brightness> (<setzen_end_of_sentence>|dimmen)"
