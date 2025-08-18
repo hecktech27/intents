@@ -250,6 +250,49 @@ tests:
         area: Schlafzimmer
         brightness: 11
     response: Helligkeit eingestellt
+  # brightness by floor - max
+  - sentences:
+      - ändere das Erdgeschoss auf die maximale Helligkeitsstufe
+      - Stell das Erdgeschoss auf die maximale Helligkeit ein
+      - Erdgeschoss auf maximale Helligkeit dimmen
+      - änder die Helligkeit im Erdgeschoss auf maximum
+      - ändere die Helligkeit im Erdgeschoss auf maximale Stufe
+      - stell die Helligkeit im Erdgeschoss auf das maximum ein
+      - stelle die Helligkeit im Erdgeschoss auf die maximale Stufe ein
+      - Helligkeit im Erdgeschoss auf die maximale Stufe einstellen
+      - die Helligkeit im Erdgeschoss auf maximum dimmen
+      - Erdgeschoss maximale Helligkeit
+      - Erdgeschoss maximale Helligkeitsstufe
+      - Erdgeschoss maximum
+      - Erdgeschoss Helligkeit maximale Stufe
+    intent:
+      name: HassLightSet
+      slots:
+        floor: Erdgeschoss
+        brightness: 100
+    response: Helligkeit eingestellt
+  # brightness by floor - min
+  - sentences:
+      - ändere das Erdgeschoss auf die minimale Helligkeitsstufe
+      - Erdgeschoss auf minimale Helligkeit
+      - Stell das Erdgeschoss auf die minimale Helligkeit ein
+      - Erdgeschoss auf minimale Helligkeit dimmen
+      - änder die Helligkeit im Erdgeschoss auf minimum
+      - ändere die Helligkeit im Erdgeschoss auf minimale Stufe
+      - stell die Helligkeit im Erdgeschoss auf das minimum ein
+      - stelle die Helligkeit im Erdgeschoss auf die minimale Stufe ein
+      - Helligkeit im Erdgeschoss auf die minimale Stufe einstellen
+      - die Helligkeit im Erdgeschoss auf minimum dimmen
+      - Erdgeschoss minimale Helligkeit
+      - Erdgeschoss minimale Helligkeitsstufe
+      - Erdgeschoss minimum
+      - Erdgeschoss Helligkeit minimale Stufe
+    intent:
+      name: HassLightSet
+      slots:
+        floor: Erdgeschoss
+        brightness: 1
+    response: Helligkeit eingestellt
   # brightness by floor
   - sentences:
       - Stelle die Helligkeit im Erdgeschoss auf 15
