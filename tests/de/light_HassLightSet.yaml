@@ -417,6 +417,10 @@ tests:
       - Stelle die Farbe des Lichts im Schlafzimmer auf blau
       - Färbe das Licht im Schlafzimmer blau
       - Die Farbe des Lichts im Schlafzimmer auf blau setzen
+      - Stell das Licht im Schlafzimmerauf blau ein
+      - Alle Lichter im Schlafzimmer in blau leuchten lassen
+      - Alle Lampen im Schlafzimmer in Farbe blau leuchten lassen
+      - Licht im Schlafzimmer blau
     intent:
       name: HassLightSet
       slots:
