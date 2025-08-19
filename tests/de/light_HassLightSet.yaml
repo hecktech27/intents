@@ -509,7 +509,6 @@ tests:
       - Farbe aller lampen in diesem Raum blau
       - Färbe den Raum blau
       - färbe diesen Raum blau ein
-      
     intent:
       name: HassLightSet
       context:
