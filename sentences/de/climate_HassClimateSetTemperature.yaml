@@ -15,7 +15,7 @@ intents:
       - sentences:
           - "<heizung> <area_floor> auf <temperature>[ <setzen_end_of_sentence>]"
           - "<area> auf <temperature> <heat_cool>"
-          - "[das ]<floor> auf <temperature> <heat_cool>"
+          - "[(den|das) ]<floor> auf <temperature> <heat_cool>"
           - "<setzen> <area_floor> <heizung> auf <temperature>"
           - "<stelle> <area_floor> <heizung> auf <temperature> ein"
           - "<setzen> <heizung> <area_floor> auf <temperature>"
