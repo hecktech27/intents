@@ -619,7 +619,7 @@ expansion_rules:
   szene: "[die ]Szene"
   skript: "[das ]Skript"
   batterie: "([der ]Batterie[n]|[des ]Akku[s])"
-  irgend: "(irgend(ein[s]|eine[s]|einer|einem|einen)[ der]|(irgendwelche|einige|manche)[ (der|die|des)]|(irgendwelches|eine|eines|einer|einem|einen)[ (der|des)]|irgendwo[ (der|die|das)]|(einiges|manches|eins)[ (der|das|des)]|ein)"
+  irgend: "(irgend(ein[s]|eine[s]|einer|einem|einen|welche)[ der]|(einige|manche[s]|eins|eine[m])[ der]|(eines|einer)[ (der|des)]|irgendwo[ (der|die|das)]|einiges[ des]|ein|irgendwelches|einen)"
   etwas: "[irgend][et]was"
   welche: "(welche[r|s|n]|was für[ <artikel_unbestimmt>[s]]) <artikel_bestimmt>"
   wieviel: "(wie[ ]viel[e]|welche Anzahl[ (an|von)])"
