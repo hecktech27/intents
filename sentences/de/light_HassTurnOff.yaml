@@ -2,6 +2,7 @@ language: de
 intents:
   HassTurnOff:
     data:
+      # all lights by area/floor
       - sentences:
           - "(<schalten>|<machen>) (<licht>|<lichter>|<alle_lichter>) <area_floor> aus"
           - "(<schalten>|dreh[e]) (<licht>|<lichter>|<alle_lichter>) <area_floor> ab"
