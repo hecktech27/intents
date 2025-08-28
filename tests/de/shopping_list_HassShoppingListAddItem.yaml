@@ -1,6 +1,7 @@
 language: de
 tests:
   - sentences:
+      - "füge Milch meiner Einkaufs liste hinzu"
       - "füge Milch meiner Einkaufsliste hinzu"
       - "füge Milch unserer Einkaufsliste hinzu"
       - "füge Milch der Einkaufsliste hinzu"
