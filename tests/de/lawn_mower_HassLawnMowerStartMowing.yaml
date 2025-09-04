@@ -2,6 +2,7 @@ language: de
 tests:
   - sentences:
       - Starte den Rasenmäher
+      - Starte den Rasenroboter
       - Schicke den Rasenmäher
       - mäh den Rasen
       - mähe Rasen
@@ -14,6 +15,7 @@ tests:
       - Schick das Schaf
       - schicke das Schaf los
       - schick Schaf los zum Rasen mähen
+      - schick Schaf los zum Wiese mähen
       - schick das Schaf Rasen mähen
       - das Schaf starten
       - Schaf losschicken
