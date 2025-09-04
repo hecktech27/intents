@@ -3,7 +3,7 @@ intents:
   HassLawnMowerStartMowing:
     data:
       - sentences:
-          - "(Starte|Schicke) den Rasenmäher"
+          - "(Starte|Schicke) den (Rasenmäher|Rasenroboter)"
           - "mäh[e] ([den ]Rasen|die Wiese)"
       - sentences:
           - schick[e] <name>[ los][[[ (den|zum)] Rasen] mähen]
