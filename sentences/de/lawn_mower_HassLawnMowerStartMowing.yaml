@@ -6,10 +6,7 @@ intents:
           - "(Starte|Schicke) den Rasenmäher"
           - "mäh[e] ([den ]Rasen|die Wiese)"
       - sentences:
-          - (<schalten>|<machen>) <name> <an>
-          - (start[e]|aktivier[e]) <name>
           - schick[e] <name>[ los][[[ (den|zum)] Rasen] mähen]
-          - <name> (starten|aktivieren|[los]schicken)
-          - <name> <an>[schalten|machen]
+          - <name> (starten|[los]schicken)
         requires_context:
           domain: lawn_mower

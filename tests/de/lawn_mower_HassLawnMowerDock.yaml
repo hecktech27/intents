@@ -16,7 +16,7 @@ tests:
       - befehle den Rasenroboter in die Garage zurück
     intent:
       name: HassLawnMowerDock
-    response: "Docking"
+    response: "Kehrt zurück"
 
   - sentences:
       - schicke das Schaf zurück
@@ -38,4 +38,4 @@ tests:
       name: HassLawnMowerDock
       slots:
         name: "Schaf"
-    response: "Docking"
+    response: "Kehrt zurück"
