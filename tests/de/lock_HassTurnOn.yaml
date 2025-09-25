@@ -1,5 +1,6 @@
 language: de
 tests:
+  # by name
   - sentences:
       - "schließe die Haustür zu"
       - "mach die Haustür zu"
@@ -21,6 +22,7 @@ tests:
         name: Haustür
     response: abgeschlossen
 
+  # by name and area
   - sentences:
       - "schließe die Haustür im Flur zu"
       - "schließe im Flur die Haustür zu"
@@ -38,6 +40,7 @@ tests:
         area: Flur
     response: abgeschlossen
 
+  # by area
   - sentences:
       - "schließe die Tür im Flur zu"
       - "im Flur die Türe zumachen"
@@ -51,6 +54,7 @@ tests:
         area: Flur
     response: abgeschlossen
 
+  # all by area
   - sentences:
       - "schließe im Flur alle Türen zu"
       - "alle Türen im Flur zumachen"

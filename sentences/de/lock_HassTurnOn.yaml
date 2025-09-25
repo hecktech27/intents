@@ -2,6 +2,7 @@ language: de
 intents:
   HassTurnOn:
     data:
+      # by name / by area and name
       - sentences:
           - "<sperren> <name>[ <area>][ (zu|ab)]"
           - "<machen> <name>[ <area>] zu"
@@ -15,6 +16,7 @@ intents:
           domain: lock
         response: lock
 
+      # by area
       - sentences:
           - "<sperren> (<tuer>|<schloss>) <area>[ (zu|ab)]"
           - "<machen> (<tuer>|<schloss>) <area> zu"
@@ -28,6 +30,7 @@ intents:
           domain: lock
         response: lock
 
+      # all by area
       - sentences:
           - "<sperren> <alle> (<tuer>|<schloss>) <area>[ (zu|ab)]"
           - "<machen> <alle> (<tuer>|<schloss>) <area> zu"

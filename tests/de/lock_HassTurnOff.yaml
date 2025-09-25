@@ -1,5 +1,6 @@
 language: de
 tests:
+  # by name
   - sentences:
       - "öffne die Haustür"
       - "entsperre die Haustür"
@@ -21,6 +22,7 @@ tests:
         name: Haustür
     response: entsperrt
 
+  # by name and area
   - sentences:
       - "Haustür im Flur öffnen"
       - "Haustür im Flur aufschließen"
@@ -39,6 +41,7 @@ tests:
         area: Flur
     response: entsperrt
 
+  # by area
   - sentences:
       - "die Türen im Flur aufschließen"
       - "im Flur das Schloss öffnen"
@@ -53,6 +56,7 @@ tests:
         area: Flur
     response: entsperrt
 
+  # all by area
   - sentences:
       - "alle Türen im Flur öffnen"
       - "öffne im Flur alle Schlösser"
