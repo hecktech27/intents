@@ -2,6 +2,7 @@ language: de
 intents:
   HassTurnOff:
     data:
+      # by area/floor
       - sentences:
           - "<schalten> <luefter> <area_floor> (aus|ab)"
           - "<schalten> <area_floor> <luefter> (aus|ab)"
@@ -49,7 +50,7 @@ intents:
           area:
             slot: true
 
-      # all
+      # by satellite area - all
       - sentences:
           - "<schalten> <hier> <alle_luefter> (aus|ab)"
           - "<schalten> <alle_luefter> <hier> (aus|ab)"
