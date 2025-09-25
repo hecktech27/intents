@@ -621,7 +621,7 @@ expansion_rules:
   lichtes_mit_artikel: "(des (Licht[s]|Lichtes)|der (Lampe|Beleuchtung))"
   lichter: "([(die|der) ]Lichter|[von den ]Lichtern|[(die|der|von den) ](Lampen|Leuchten|Beleuchtungen))"
   alle_lichter: "((<alle>|<alle_genitiv>) ((Lichter|Lampen|Leuchten|Beleuchtungen)|Beleuchtung)|von allen (Lichtern|Lampen|Leuchten|Beleuchtungen))"
-  alle_lichter_ueberall: "([überall ]<alle_lichter>|überall (<licht>|<lichter>))"
+  alle_lichter_ueberall: "([überall ]<alle_lichter>|<alle_lichter> überall|überall (<licht>|<lichter>)|(<licht>|<lichter>) überall)"
   leuchten_lassen: "([er]leuchten lassen|[ein]färben)"
   hier: "(hier[ (im|in diesem) (Raum|Bereich)]|[(im|in diesem|diesen|den) ](Raum|Bereich))"
   tuer: "[die ]Tür[e|en]"
