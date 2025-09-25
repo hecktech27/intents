@@ -9,4 +9,5 @@ responses:
       cover: "geschlossen"
       close_all: "alle geschlossen"
       lock: "entsperrt"
+      lock_all: "Alle entsperrt"
       valve: "geschlossen"

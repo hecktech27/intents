@@ -14,12 +14,23 @@ intents:
         response: lock
 
       - sentences:
-          - "<entsperren>[ <alle>] (<tuer>|<schloss>) <area>"
-          - "<entsperren> <area>[ <alle>] (<tuer>|<schloss>)"
-          - "(<sperren>|<machen>)[ <alle>] (<tuer>|<schloss>) <area> auf"
-          - "(<sperren>|<machen>) <area>[ <alle>] (<tuer>|<schloss>) auf"
-          - "[<alle> ](<tuer>|<schloss>) <area> (auf[machen]|<entsperren>)"
-          - "<area>[ <alle>] (<tuer>|<schloss>) (auf[machen]|<entsperren>)"
+          - "<entsperren> (<tuer>|<schloss>) <area>"
+          - "<entsperren> <area> (<tuer>|<schloss>)"
+          - "(<sperren>|<machen>) (<tuer>|<schloss>) <area> auf"
+          - "(<sperren>|<machen>) <area> (<tuer>|<schloss>) auf"
+          - "(<tuer>|<schloss>) <area> (auf[machen]|<entsperren>)"
+          - "<area> (<tuer>|<schloss>) (auf[machen]|<entsperren>)"
         requires_context:
           domain: lock
         response: lock
+
+      - sentences:
+          - "<entsperren> <alle> (<tuer>|<schloss>) <area>"
+          - "<entsperren> <area> <alle> (<tuer>|<schloss>)"
+          - "(<sperren>|<machen>) <alle> (<tuer>|<schloss>) <area> auf"
+          - "(<sperren>|<machen>) <area> <alle> (<tuer>|<schloss>) auf"
+          - "<alle> (<tuer>|<schloss>) <area> (auf[machen]|<entsperren>)"
+          - "<area> <alle> (<tuer>|<schloss>) (auf[machen]|<entsperren>)"
+        requires_context:
+          domain: lock
+        response: lock_all

@@ -9,6 +9,7 @@ responses:
       cover: "geöffnet"
       open_all: "alle geöffnet"
       lock: "abgeschlossen"
+      lock_all: "Alle abgeschlossen"
       scene: "{{ slots.name }} aktiviert"
       script: "{{ slots.name }} gestartet"
       valve: "geöffnet"

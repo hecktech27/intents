@@ -40,13 +40,10 @@ tests:
     response: entsperrt
 
   - sentences:
-      - "alle Türen im Flur öffnen"
       - "die Türen im Flur aufschließen"
       - "im Flur das Schloss öffnen"
-      - "öffne im Flur alle Schlösser"
       - "mach im Flur die Türen auf"
       - "macht im Flur die Türen auf"
-      - "entriegle alle Türen im Flur"
       - "entriegel im Flur die Türen"
     intent:
       name: HassTurnOff
@@ -55,3 +52,15 @@ tests:
       slots:
         area: Flur
     response: entsperrt
+
+  - sentences:
+      - "alle Türen im Flur öffnen"
+      - "öffne im Flur alle Schlösser"
+      - "entriegle alle Türen im Flur"
+    intent:
+      name: HassTurnOff
+      context:
+        domain: lock
+      slots:
+        area: Flur
+    response: Alle entsperrt

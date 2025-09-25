@@ -40,12 +40,9 @@ tests:
 
   - sentences:
       - "schließe die Tür im Flur zu"
-      - "schließe im Flur alle Türen zu"
-      - "alle Türen im Flur zumachen"
       - "im Flur die Türe zumachen"
       - "im Flur das Schloss abschließen"
       - "verriegle die Schlösser im Flur"
-      - "verriegel im Flur alle Schlösser"
     intent:
       name: HassTurnOn
       context:
@@ -53,3 +50,15 @@ tests:
       slots:
         area: Flur
     response: abgeschlossen
+
+  - sentences:
+      - "schließe im Flur alle Türen zu"
+      - "alle Türen im Flur zumachen"
+      - "verriegel im Flur alle Schlösser"
+    intent:
+      name: HassTurnOn
+      context:
+        domain: lock
+      slots:
+        area: Flur
+    response: Alle abgeschlossen
