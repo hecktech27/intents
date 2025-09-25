@@ -2,6 +2,7 @@ language: de
 intents:
   HassTurnOn:
     data:
+      # by area/floor
       - sentences:
           - "<schalten> <luefter> <area_floor> (an|ein)"
           - "<schalten> <area_floor> <luefter> (an|ein)"

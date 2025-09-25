@@ -1,5 +1,6 @@
 language: de
 tests:
+  # by area
   - sentences:
       # Ventilator
       - schalte den Ventilator im Wohnzimmer ein
@@ -58,7 +59,7 @@ tests:
       - Ventilator im Wohnzimmer anmachen
       - Ventilator im Wohnzimmer an
 
-        # Lüfter
+      # Lüfter
       - schalte den Lüfter im Wohnzimmer ein
       - schalte die Lüfter im Wohnzimmer ein
       - schalte den Lüfter im Wohnzimmer an
@@ -115,6 +116,7 @@ tests:
         domain: fan
     response: Ventilator eingeschaltet
 
+  # by area - all
   - sentences:
       # Ventilator
       - schalte alle Ventilatoren im Wohnzimmer ein
@@ -142,7 +144,7 @@ tests:
       - mache in dem Wohnzimmer alle Ventilatoren an
       - mache im Wohnzimmer alle Ventilatoren an
 
-        # Lüfter
+      # Lüfter
       - schalte alle Lüfter im Wohnzimmer ein
       - schalte alle Lüfter im Wohnzimmer an
       - schalte im Wohnzimmer alle Lüfter ein
@@ -171,6 +173,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren eingeschaltet
 
+  # all
   - sentences:
       # Ventilator
       - schalte alle Ventilatoren ein
@@ -183,7 +186,7 @@ tests:
       - alle Ventilatoren anmachen
       - alle Ventilatoren an
 
-        # Lüfter
+      # Lüfter
       - schalte alle Lüfter ein
       - schalte alle Lüfter an
       - schaltet alle Lüfter an
@@ -200,6 +203,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren eingeschaltet
 
+  # by satellite area
   - sentences:
       - Schalte den Ventilator an
       - schalte den Lüfter ein
@@ -248,6 +252,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren eingeschaltet
 
+  # by floor
   - sentences:
       - schalte die Ventilatoren im Erdgeschoss ein
       - schalte im Erdgeschoss die Ventilatoren an
@@ -265,6 +270,7 @@ tests:
         domain: fan
     response: Ventilator eingeschaltet
 
+  # by floor - all
   - sentences:
       - starte alle ventilatoren im Erdgeschoss
       - starte im Erdgeschoss alle Ventilatoren

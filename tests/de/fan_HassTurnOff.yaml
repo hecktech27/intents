@@ -1,5 +1,6 @@
 language: de
 tests:
+  # by area
   - sentences:
       # Ventilator
       - mach den Ventilator im Wohnzimmer aus
@@ -40,7 +41,7 @@ tests:
       - Ventilator im Wohnzimmer ausmachen
       - Ventilator im Wohnzimmer aus
 
-        # Lüfter
+      # Lüfter
       - schalte den Lüfter im Wohnzimmer aus
       - schalte die Lüfter im Wohnzimmer aus
       - schalte den Lüfter im Wohnzimmer ab
@@ -81,6 +82,7 @@ tests:
         domain: fan
     response: Ventilator ausgeschaltet
 
+  # by area - all
   - sentences:
       # Ventilator
       - mach alle Ventilatoren im Wohnzimmer aus
@@ -101,7 +103,7 @@ tests:
       - stoppe in dem Wohnzimmer alle Ventilatoren
       - stoppe im Wohnzimmer alle Ventilatoren
 
-        # Lüfter
+      # Lüfter
       - schalte alle Lüfter im Wohnzimmer aus
       - schalte alle Lüfter im Wohnzimmer ab
       - schalte im Wohnzimmer alle Lüfter aus
@@ -123,6 +125,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren ausgeschaltet
 
+  # by floor
   - sentences:
       # Ventilator
       - mach den Ventilator im Erdgeschoss aus
@@ -163,7 +166,7 @@ tests:
       - Ventilator im Erdgeschoss ausmachen
       - Ventilator im Erdgeschoss aus
 
-        # Lüfter
+      # Lüfter
       - schalte den Lüfter im Erdgeschoss aus
       - schalte die Lüfter im Erdgeschoss aus
       - schalte den Lüfter im Erdgeschoss ab
@@ -204,6 +207,7 @@ tests:
         domain: fan
     response: Ventilator ausgeschaltet
 
+  # by floor - all
   - sentences:
       # Ventilator
       - mach alle Ventilatoren im Erdgeschoss aus
@@ -224,7 +228,7 @@ tests:
       - stoppe in dem Erdgeschoss alle Ventilatoren
       - stoppe im Erdgeschoss alle Ventilatoren
 
-        # Lüfter
+      # Lüfter
       - schalte alle Lüfter im Erdgeschoss aus
       - schalte alle Lüfter im Erdgeschoss ab
       - schalte im Erdgeschoss alle Lüfter aus
@@ -247,6 +251,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren ausgeschaltet
 
+  # all
   - sentences:
       # Ventilator
       - schalte alle Ventilatoren aus
@@ -256,7 +261,7 @@ tests:
       - alle Ventilatoren ausmachen
       - alle Ventilatoren aus
 
-        # Lüfter
+      # Lüfter
       - schalte alle Lüfter aus
       - schaltet alle Lüfter aus
       - stoppe alle Lüfter
@@ -269,6 +274,7 @@ tests:
         domain: fan
     response: Alle Ventilatoren ausgeschaltet
 
+  # by satellite area
   - sentences:
       - schalte den Ventilator aus
       - schalte hier den Ventilator aus
@@ -294,6 +300,7 @@ tests:
         domain: fan
     response: Ventilator ausgeschaltet
 
+  # by satellite area - all
   - sentences:
       - schalte hier alle Ventilatoren aus
       - schalte alle Ventilatoren in diesem Raum aus
