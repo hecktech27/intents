@@ -83,6 +83,12 @@ tests:
       - Schalte die ganze Beleuchtung aus
       - Schaltet die ganze Beleuchtung aus
       - Alle Lichter aus
+      - schalte überall alle Lichter aus
+      - mach überall das Licht aus
+      - schalte überall die Lampen aus
+      - schalte überall alle Lichter ab
+      - dreh überall das Licht ab
+      - schalte überall die Lampen ab
     intent:
       name: HassTurnOff
       slots:

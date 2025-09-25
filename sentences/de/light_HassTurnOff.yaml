@@ -17,9 +17,9 @@ intents:
 
       # all lights
       - sentences:
-          - "(<schalten>|<machen>) <alle_lichter> aus"
-          - "(<schalten>|dreh[e]) <alle_lichter> ab"
-          - "<alle_lichter> (aus[schalten]|abschalten|ausmachen|abdrehen)"
+          - "(<schalten>|<machen>) ([überall ]<alle_lichter>|überall (<licht>|<lichter>)) aus"
+          - "(<schalten>|dreh[e]) ([überall ]<alle_lichter>|überall (<licht>|<lichter>)) ab"
+          - "([überall ]<alle_lichter>|überall (<licht>|<lichter>)) (aus[schalten]|abschalten|ausmachen|abdrehen)"
         response: "light_all"
         slots:
           domain: "light"
