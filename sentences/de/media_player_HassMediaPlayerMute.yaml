@@ -8,6 +8,6 @@ intents:
           area:
             slot: true
       - sentences:
-          - "[<source_of_noise> (auf|von) ]<name> <media_mute>"
+          - "[<source_of_noise> ((auf|von)[ dem]|vom) ]<name> <media_mute>"
         requires_context:
           domain: media_player
