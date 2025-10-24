@@ -24,6 +24,13 @@ tests:
       - zu laut
       - Es ist zu laut
       - die Musik ist zu laut
+      - etwas leiser
+      - ein bisschen leiser
+      - musik ein bisschen leiser
+      - mach die Musik etwas leiser
+      - die Lautstärke der Musik verringern
+      - die Lautstärke reduzieren
+      - Lautstärke herunterdrehen
     intent:
       name: HassSetVolumeRelative
       context:
@@ -49,6 +56,10 @@ tests:
       - senke die Lautstärke der Musik um 20% ab
       - Lautstärke der Musik um 20% reduzieren
       - dreh die Lautstärke der Musik 20% runter
+      - die Musik um 20% leiser machen
+      - die Lautstärke der Musik um 20% herunterdrehen
+      - den Ton um 20% leiser machen
+      - die Musik 20% leiser einstellen
     intent:
       name: HassSetVolumeRelative
       context:
@@ -80,6 +91,11 @@ tests:
       - zu leise
       - es ist zu leise
       - die Musik ist zu leise
+      - etwas lauter
+      - musik ein bisschen lauter
+      - mach die Musik etwas lauter
+      - die Lautstärke der Musik erhöhen
+      - Lautstärke heraufdrehen
     intent:
       name: HassSetVolumeRelative
       context:
@@ -105,6 +121,10 @@ tests:
       - Lautstärke der Musik um 20% aufdrehen
       - dreh die Lautstärke der Musik 20% rauf
       - dreh die Lautstärke der Musik 20% auf
+      - die Musik um 20% lauter machen
+      - die Lautstärke der Musik um 20% heraufdrehen
+      - den Ton um 20% lauter machen
+      - die Musik 20% lauter einstellen
     intent:
       name: HassSetVolumeRelative
       context:

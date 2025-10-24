@@ -4,10 +4,11 @@ intents:
     data:
       # Current area - down
       - sentences:
-          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik|etwas|ein bisschen) ]leiser"
+          - "[(mach[e]|stell[e]) ][([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][(etwas|ein bisschen) ]leiser"
+          - "[([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][(etwas|ein bisschen) ]leiser (machen|[ein]stellen)"
           - "(verringere|reduziere) die lautstärke[ der Musik]"
           - "senke die lautstärke[ der Musik][ ab]"
-          - "lautstärke[ der Musik] (verringern|reduzieren|[ab]senken)"
+          - "[die ]lautstärke[ der Musik] (verringern|reduzieren|[ab]senken|[he]runterdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] [he]runter"
           - "[(es|die Musik) ist ]zu laut"
         slots:
@@ -18,9 +19,10 @@ intents:
       # current area - step_down
       - sentences:
           - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][um ]<volume_step> leiser"
+          - "[([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][um ]<volume_step> leiser (machen|[ein]stellen)"
           - "(verringere|reduziere) die lautstärke[ der Musik][ um]<volume_step>"
           - "senke die lautstärke[ der Musik][ um] <volume_step>[ ab]"
-          - "lautstärke[ der Musik][ um] <volume_step> (verringern|reduzieren|[ab]senken)"
+          - "[die ]lautstärke[ der Musik][ um] <volume_step> (verringern|reduzieren|[ab]senken|[he]runterdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik][ um] <volume_step> [he]runter"
         expansion_rules:
           volume_step: "{volume_step_down:volume_step}[%| prozent]"
@@ -29,9 +31,10 @@ intents:
             slot: true
       # current area - up
       - sentences:
-          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik|etwas|ein bisschen) ]lauter"
+          - "[(mach[e]|stell[e]) ][([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][(etwas|ein bisschen) ]lauter"
+          - "[([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][(etwas|ein bisschen) ]lauter (machen|[ein]stellen)"
           - "erhöhe die lautstärke[ der Musik]"
-          - "lautstärke[ der Musik] (erhöhen|aufdrehen)"
+          - "[die ]lautstärke[ der Musik] (erhöhen|[her]aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] ([he]rauf|auf)"
           - "[(es|die Musik) ist ]zu leise"
         slots:
@@ -42,8 +45,9 @@ intents:
       # current area - step_up
       - sentences:
           - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][um ]<volume_step> lauter"
+          - "[([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ][um ]<volume_step> lauter (machen|[ein]stellen)"
           - "erhöhe die lautstärke[ der Musik][ um] <volume_step>"
-          - "lautstärke[ der Musik][ um] <volume_step> (erhöhen|aufdrehen)"
+          - "[die ]lautstärke[ der Musik][ um] <volume_step> (erhöhen|[her]aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik][ um] <volume_step> ([he]rauf|auf)"
         expansion_rules:
           volume_step: "{volume_step_up:volume_step}[%| prozent]"
