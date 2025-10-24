@@ -14,11 +14,16 @@ tests:
       - mach die Musik leiser
       - mache etwas leiser
       - mach ein bisschen leiser
+      - mach ein wenig leiser
       - etwas leiser bitte
       - Musik leiser
       - verringere die Lautstärke der Musik
       - reduziere die Lautstärke der Musik
+      - reduziere die Lautstärke ein wenig
+      - verringere die Lautstärke der Musik ein bisschen
       - senke die Lautstärke der Musik ab
+      - senke die Lautstärke ein wenig ab
+      - senke die Lautstärke ein bisschen
       - Lautstärke der Musik reduzieren
       - dreh die Lautstärke der Musik runter
       - zu laut
@@ -26,11 +31,16 @@ tests:
       - die Musik ist zu laut
       - etwas leiser
       - ein bisschen leiser
+      - ein wenig leiser
       - musik ein bisschen leiser
+      - musik ein wenig leiser
       - mach die Musik etwas leiser
       - die Lautstärke der Musik verringern
       - die Lautstärke reduzieren
       - Lautstärke herunterdrehen
+      - mach etwas leiser
+      - stell ein bisschen leiser
+      - stell ein wenig leiser
     intent:
       name: HassSetVolumeRelative
       context:
@@ -60,6 +70,7 @@ tests:
       - die Lautstärke der Musik um 20% herunterdrehen
       - den Ton um 20% leiser machen
       - die Musik 20% leiser einstellen
+      - stelle 20% leiser
     intent:
       name: HassSetVolumeRelative
       context:
@@ -77,12 +88,16 @@ tests:
       - "lautstärke lauter"
       - "lautstärke aufdrehen"
       - "erhöhe die lautstärke"
+      - erhöhe die Lautstärke der Musik ein bisschen
+      - erhöhe die Lautstärke etwas
       - "drehe die lautstärke rauf"
       - mach die Lautstärke der Musik lauter
       - mach die Musik lauter
       - mache etwas lauter
       - mache ein bisschen lauter
+      - mache ein wenig lauter
       - ein bisschen lauter
+      - ein wenig lauter
       - Musik lauter
       - erhöhe die Lautstärke der Musik
       - Lautstärke der Musik aufdrehen
@@ -93,9 +108,11 @@ tests:
       - die Musik ist zu leise
       - etwas lauter
       - musik ein bisschen lauter
+      - musik ein wenig lauter
       - mach die Musik etwas lauter
       - die Lautstärke der Musik erhöhen
       - Lautstärke heraufdrehen
+      - mach lauter
     intent:
       name: HassSetVolumeRelative
       context:
@@ -125,6 +142,7 @@ tests:
       - die Lautstärke der Musik um 20% heraufdrehen
       - den Ton um 20% lauter machen
       - die Musik 20% lauter einstellen
+      - mach 20% lauter
     intent:
       name: HassSetVolumeRelative
       context:
@@ -149,9 +167,22 @@ tests:
       - mach die Musik vom TV leiser
       - stelle die Lautstärke der Musik vom TV leiser
       - reduziere die Lautstärke der Musik vom TV
+      - reduziere die Lautstärke der Musik vom TV ein wenig
       - senke die Lautstärke der Musik vom TV
+      - senke die Lautstärke der Musik vom TV ein bisschen ab
       - Lautstärke der Musik vom TV reduzieren
       - dreh die Lautstärke der Musik vom TV runter
+      - TV etwas leiser
+      - TV ein bisschen leiser
+      - TV ein wenig leiser
+      - mache den ton vom TV etwas leiser
+      - stelle die lautstärke vom TV ein bisschen leiser
+      - stelle die lautstärke vom TV ein wenig leiser
+      - lautstärke vom TV etwas verringern
+      - die lautstärke vom TV ein bisschen reduzieren
+      - die lautstärke vom TV ein wenig reduzieren
+      - die Lautstärke vom TV ein bisschen herunterdrehen
+      - Lautstärke vom TV ein wenig herunterdrehen
     intent:
       name: HassSetVolumeRelative
       slots:
@@ -161,6 +192,8 @@ tests:
   # Media player by name - step_down
   - sentences:
       - "TV 20% leiser"
+      - "TV um 20 Prozent leiser einstellen"
+      - "den TV 20% leiser machen"
       - "mache den ton vom TV 20% leiser"
       - "stelle die lautstärke vom TV 20% leiser"
       - "senke die lautstärke vom TV um 20%"
@@ -175,6 +208,7 @@ tests:
       - reduziere die Lautstärke der Musik vom TV 20%
       - senke die Lautstärke der Musik vom TV um 20% ab
       - Lautstärke der Musik vom TV 20% reduzieren
+      - Die Lautstärke der Musik vom TV 20% reduzieren
       - dreh die Lautstärke der Musik vom TV 20% runter
     intent:
       name: HassSetVolumeRelative
@@ -185,17 +219,28 @@ tests:
   # Media player by name - up
   - sentences:
       - "TV lauter"
+      - TV etwas lauter
+      - TV ein wenig lauter
+      - den TV ein bisschen lauter
       - "mache den ton vom TV lauter"
+      - mach den Ton vom TV etwas lauter
       - "stelle die lautstärke vom TV lauter"
+      - stell die Lautstärke vom TV ein bisschen lauter
       - "lautstärke vom TV erhöhen"
+      - die Lautstärke vom TV ein wenig erhöhen
+      - Lautstärke der Musik vom TV ein bisschen aufdrehen
+      - die Lautstärke vom TV etwas heraufdrehen
       - "lautstärke vom TV aufdrehen"
       - "drehe die lautstärke vom TV herauf"
       - Musik vom TV lauter
       - mach die Musik vom TV lauter
       - stelle die Lautstärke der Musik vom TV lauter
       - erhöhe die Lautstärke der Musik vom TV
+      - erhöhe die Lautstärke der Musik vom TV etwas
+      - erhöhe die Lautstärke vom TV ein wenig
       - Lautstärke der Musik vom TV aufdrehen
       - dreh die Lautstärke der Musik vom TV rauf
+      - dreh die Lautstärke der Musik vom TV ein bisschen auf
       - dreh die Lautstärke der Musik vom TV auf
     intent:
       name: HassSetVolumeRelative
@@ -206,6 +251,8 @@ tests:
   # Media player by name - step_up
   - sentences:
       - "TV 20% lauter"
+      - den TV 20% lauter machen
+      - TV 20% lauter einstellen
       - "mache den ton vom TV 20% lauter"
       - "stelle die lautstärke vom TV 20% lauter"
       - "lautstärke vom TV um 20% erhöhen"
@@ -216,6 +263,7 @@ tests:
       - stell die Lautstärke der Musik vom TV um 20% lauter
       - erhöhe die Lautstärke der Musik vom TV 20%
       - Lautstärke der Musik vom TV 20% erhöhen
+      - die Lautstärke der Musik vom TV um 20% heraufdrehen
       - dreh die Lautstärke der Musik vom TV 20% rauf
       - dreh die Lautstärke der Musik vom TV 20% auf
     intent:
