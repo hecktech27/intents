@@ -127,7 +127,6 @@ tests:
       - dreh die Lichter in diesem Raum auf
       - schalte hier im Raum das Licht an
       - in diesem raum die Lampen anschalten
-      - Lichtern
     intent:
       name: HassTurnOn
       context:
