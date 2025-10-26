@@ -59,7 +59,7 @@ intents:
       - sentences:
           - "<name> [(etwas|ein bisschen|ein wenig) ]leiser"
           - "[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]leiser"
-          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]leiser (machen|stellen)"
+          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]leiser (machen|[ein]stellen)"
           - "(verringere|reduziere) die lautstärke[ der Musik] <von_dem> <name>[ (etwas|ein bisschen|ein wenig)]"
           - "senke die lautstärke[ der Musik] <von_dem> <name>[ (etwas|ein bisschen|ein wenig)][ ab]"
           - "[die ]lautstärke[ der Musik] <von_dem> <name> [(etwas|ein bisschen|ein wenig) ](verringern|reduzieren|[ab]senken|[he]runterdrehen)"
@@ -72,7 +72,7 @@ intents:
       - sentences:
           - "<name>[ um] <volume_step> leiser"
           - "[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> leiser"
-          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> leiser (machen|stellen)"
+          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> leiser (machen|[ein]stellen)"
           - "(verringere|reduziere) die lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step>"
           - "senke die lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step> [ ab]"
           - "[die ]lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step> (verringern|reduzieren|[ab]senken|[he]runterdrehen)"
@@ -87,9 +87,9 @@ intents:
       - sentences:
           - "<name> [(etwas|ein bisschen|ein wenig) ]lauter"
           - "[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]lauter"
-          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]lauter (machen|stellen)"
+          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]lauter (machen|[ein]stellen)"
           - "erhöhe die lautstärke[ der Musik] <von_dem> <name>[ (etwas|ein bisschen|ein wenig)]"
-          - "[die ]lautstärke[ der Musik] <von_dem> <name> [(etwas|ein bisschen|ein wenig) ](erhöhen|aufdrehen)"
+          - "[die ]lautstärke[ der Musik] <von_dem> <name> [(etwas|ein bisschen|ein wenig) ](erhöhen|[her]aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] <von_dem> <name> [(etwas|ein bisschen|ein wenig) ]([he]rauf|auf)"
         slots:
           volume_step: "up"
@@ -99,9 +99,9 @@ intents:
       - sentences:
           - "<name>[ um] <volume_step> lauter"
           - "[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> lauter"
-          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> lauter (machen|stellen)"
+          - "([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) <von_dem> <name>[ um] <volume_step> lauter (machen|[ein]stellen)"
           - "erhöhe die lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step>"
-          - "[die ]lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step> (erhöhen|aufdrehen)"
+          - "[die ]lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step> (erhöhen|[her]aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] <von_dem> <name>[ um] <volume_step> ([he]rauf|auf)"
         expansion_rules:
           volume_step: "{volume_step_up:volume_step}[%| prozent]"
