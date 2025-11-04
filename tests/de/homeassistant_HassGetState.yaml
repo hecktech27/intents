@@ -9,6 +9,15 @@ tests:
     response: "Außentemperatur ist 21,47 °C"
 
   - sentences:
+      - "wie laut ist der tv"
+      - "Lautstärke TV"
+    intent:
+      name: HassGetState
+      slots:
+        name: "TV"
+    response: "Tv ist auf 50 % eingestellt"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
