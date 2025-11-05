@@ -18,6 +18,15 @@ tests:
     response: "Tv ist auf 50 % eingestellt"
 
   - sentences:
+      - "wie laut ist die Soundbar"
+      - "Lautstärke Soundbar"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Soundbar"
+    response: "Soundbar ist im Moment ausgeschaltet"
+
+  - sentences:
       - "wie laut ist das Radio"
       - "Lautstärke Radio"
     intent:

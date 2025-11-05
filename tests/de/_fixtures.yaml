@@ -347,6 +347,11 @@ entities:
     state: "idle"
     area: living_room
 
+  - name: "Soundbar"
+    id: "media_player.radio"
+    state: "off"
+    area: living_room
+
   - name: "Rover"
     id: "vacuum.rover"
     state: "idle"
