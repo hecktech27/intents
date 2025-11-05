@@ -88,8 +88,8 @@ responses:
 
       get_volume: |
         {% if 'volume_level' in state.attributes %}
-          {% set volume = state.attributes.volume_level | int %}
-          {{ slots.name | capitalize }} ist auf {{ volume }} % eingestellt
+          {% set volume = (state.attributes.volume_level | float(0)) * 100 %}
+          {{ slots.name | capitalize }} ist auf {{ volume | round(0) | int }} % eingestellt
         {% else %}
           {{ slots.name | capitalize }} hat keinen Lautstärke-Wert
         {% endif %}

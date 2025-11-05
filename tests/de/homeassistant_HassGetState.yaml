@@ -18,6 +18,15 @@ tests:
     response: "Tv ist auf 50 % eingestellt"
 
   - sentences:
+      - "wie laut ist das Radio"
+      - "Lautstärke Radio"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Radio"
+    response: "Radio hat keinen Lautstärke-Wert"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
