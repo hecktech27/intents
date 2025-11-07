@@ -74,6 +74,7 @@ tests:
         domain: light
     response: Licht eingeschaltet
 
+  # all lights
   - sentences:
       - Schalte alle Lichter an
       - Schaltet alle Lichter an
@@ -100,6 +101,13 @@ tests:
       - die Lampen überall einschalten
       - überall das Licht anschalten
       - das Licht überall anschalten
+      # STT-fixes
+      - überall lichtern
+      - überall das lichtern
+      - schalte überall lichtern
+      - schalt überall das lichtern
+      - mache überall das lichtern
+      - mach überall lichtern
     intent:
       name: HassTurnOn
       slots:

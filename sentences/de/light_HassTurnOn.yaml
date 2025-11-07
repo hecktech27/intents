@@ -20,9 +20,11 @@ intents:
       # all lights
       - sentences:
           - "(<schalten>|<machen>) <alle_lichter_ueberall> an"
+          - "(<schalten>|<machen>) überall [das ]<stt_fix_licht_an>"
           - "<schalten> <alle_lichter_ueberall> ein"
           - "dreh[e] <alle_lichter_ueberall> auf"
           - "<alle_lichter_ueberall> ((an|ein)[schalten]|anmachen|aufdrehen)"
+          - "überall [das ]<stt_fix_licht_an>"
         response: "light_all"
         slots:
           domain: "light"
