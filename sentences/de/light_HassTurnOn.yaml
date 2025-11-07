@@ -29,14 +29,15 @@ intents:
 
       # Turn on all lights in the same area as a satellite device
       - sentences:
-          - "(<schalten>|<machen>) (<licht>|<lichter>)[ <hier>] an"
+          - "(<schalten>|<machen>) ((<licht>|<lichter>)[ <hier>] an|[das ]<stt_fix_licht_an>)"
           - "<schalten> (<licht>|<lichter>)[ <hier>] ein"
           - "dreh[e] (<licht>|<lichter>)[ <hier>] auf"
-          - "(<schalten>|<machen>) <hier> (<licht>|<lichter>) an"
+          - "(<schalten>|<machen>) <hier> ((<licht>|<lichter>) an|[das ]<stt_fix_licht_an>)"
           - "<schalten> <hier> (<licht>|<lichter>) ein"
           - "dreh[e] <hier> (<licht>|<lichter>) auf"
           - "(<licht>|<lichter>)[ <hier>] ((an|ein)[schalten]|anmachen|aufdrehen)"
           - "<hier> (<licht>|<lichter>) ((an|ein)[schalten]|anmachen|aufdrehen)"
+          - "<hier> [das ]<stt_fix_licht_an>"
           - "<stt_fix_licht_an>"
         response: "light"
         slots:
