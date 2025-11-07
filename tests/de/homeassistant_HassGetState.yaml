@@ -63,6 +63,33 @@ tests:
     response: "Schlafzimmerlampe hat keinen Dimmer-Wert"
 
   - sentences:
+      - "Auf welche Farbtemperatur ist die Stehlampe eingestellt"
+      - "Farbtemperatur Stehlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Stehlampe"
+    response: "Stehlampe ist auf 2700 Kelvin eingestellt"
+
+  - sentences:
+      - "Auf welche Farbtemperatur ist die Wohnzimmerlampe eingestellt"
+      - "Farbtemperatur Wohnzimmerlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Wohnzimmerlampe"
+    response: "Wohnzimmerlampe ist im Moment ausgeschaltet"
+
+  - sentences:
+      - "Auf welche Farbtemperatur ist die Schlafzimmerlampe eingestellt"
+      - "Farbtemperatur Schlafzimmerlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Schlafzimmerlampe"
+    response: "Schlafzimmerlampe hat keinen Farbtemperatur-Wert"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
