@@ -1,5 +1,6 @@
 language: de
 tests:
+  # by area
   - sentences:
       - Schalte das Licht in der Küche an
       - Schalte die Lichter in der Küche an
@@ -67,6 +68,15 @@ tests:
       - In Küche alle Lichter an
       - Licht Küche an
       - Küche Licht an
+      # STT-fixes
+      - schalte in der Küche Lichtern
+      - schalt in der Küche das Lichtern
+      - mache in der Küche Lichtern
+      - mach in der Küche das Lichtern
+      - Lichtern in der Küche
+      - das Lichtern in der Küche
+      - in der Küche Lichtern
+      - in der Küche das Lichtern
     intent:
       name: HassTurnOn
       slots:
@@ -178,6 +188,15 @@ tests:
       - Im Erdgeschoss das Licht aufdrehen
       - Im Erdgeschoss die Lichter aufdrehen
       - Im Erdgeschoss alle Lichter aufdrehen
+      # STT-fixes
+      - schalte im Erdgeschoss Lichtern
+      - schalt im Erdgeschoss das Lichtern
+      - mache im Erdgeschoss Lichtern
+      - mach im Erdgeschoss das Lichtern
+      - Lichtern im Erdgeschoss
+      - das Lichtern im Erdgeschoss
+      - im Erdgeschoss Lichtern
+      - im Erdgeschoss das Lichtern
     intent:
       name: HassTurnOn
       slots:
