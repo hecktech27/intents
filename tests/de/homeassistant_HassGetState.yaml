@@ -45,6 +45,15 @@ tests:
     response: "Stehlampe ist auf 50 % eingestellt"
 
   - sentences:
+      - "wie Hell ist die Wohnzimmerlampe"
+      - "Helligkeit Wohnzimmerlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Wohnzimmerlampe"
+    response: "Wohnzimmerlampe ist im Moment ausgeschaltet"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
@@ -148,7 +157,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "Nein, Schreibtischlampe ist es nicht"
+    response: "Nein, Schreibtischlampe und Wohnzimmerlampe sind es nicht"
 
   - sentences:
       - "welche Lampen sind an?"
@@ -159,7 +168,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "Schlafzimmerlampe, Stehlampe und Wohnzimmerlampe"
+    response: "Schlafzimmerlampe und Stehlampe"
 
   - sentences:
       - "welche Lampen im Obergeschoss sind aus?"
@@ -192,7 +201,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "3"
+    response: "2"
 
   - sentences:
       - "wie viele Lampen sind an im Schlafzimmer?"

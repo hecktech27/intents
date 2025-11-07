@@ -45,11 +45,11 @@ entities:
     area: bedroom
   - name: Wohnzimmerlampe
     id: light.livingroom_lamp
-    state: "on"
+    state: "off"
     area: living_room
     attributes:
-      brightness: 125
-      color_temp_kelvin: 3000
+      brightness: null
+      color_temp_kelvin: null
   - name: Stehlampe
     id: light.livingroom_floorlamp
     state: "on"
