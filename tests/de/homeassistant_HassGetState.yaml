@@ -58,6 +58,8 @@ tests:
       - "ist die Schlafzimmerlampe aus im Schlafzimmer?"
       - "ist die Schlafzimmerlampe im Schlafzimmer aus?"
       - "ist im Schlafzimmer die Schlafzimmerlampe aus?"
+      # STT-fixes
+      - "ist die Schlafzimmerlampe ausm Schlafzimmer?"
     intent:
       name: HassGetState
       slots:
@@ -70,6 +72,8 @@ tests:
       - "ist die Schlafzimmerlampe aus im Obergeschoss?"
       - "ist die Schlafzimmerlampe im Obergeschoss aus?"
       - "ist im Obergeschoss die Schlafzimmerlampe aus?"
+      # STT-fixes
+      - "ist die Schlafzimmerlampe ausm Obergeschoss?"
     intent:
       name: HassGetState
       slots:
