@@ -36,6 +36,15 @@ tests:
     response: "Radio hat keinen Lautstärke-Wert"
 
   - sentences:
+      - "wie Hell ist die Stehlampe"
+      - "Helligkeit Stehlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Stehlampe"
+    response: "Stehlampe ist auf 127 % eingestellt"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
@@ -150,7 +159,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "Schlafzimmerlampe"
+    response: "Schlafzimmerlampe, Stehlampe und Wohnzimmerlampe"
 
   - sentences:
       - "welche Lampen im Obergeschoss sind aus?"
@@ -183,7 +192,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "1"
+    response: "3"
 
   - sentences:
       - "wie viele Lampen sind an im Schlafzimmer?"
