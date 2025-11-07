@@ -54,6 +54,15 @@ tests:
     response: "Wohnzimmerlampe ist im Moment ausgeschaltet"
 
   - sentences:
+      - "wie Hell ist die Schlafzimmerlampe"
+      - "Helligkeit Schlafzimmerlampe"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Schlafzimmerlampe"
+    response: "Schlafzimmerlampe hat keinen Dimmer-Wert"
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState
