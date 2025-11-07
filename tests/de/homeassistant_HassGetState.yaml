@@ -42,7 +42,7 @@ tests:
       name: HassGetState
       slots:
         name: "Stehlampe"
-    response: "Stehlampe ist auf 127 % eingestellt"
+    response: "Stehlampe ist auf 50 % eingestellt"
 
   - sentences:
       - "wie ist die Wohnzimmertemperatur?"
