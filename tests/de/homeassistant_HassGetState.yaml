@@ -39,6 +39,18 @@ tests:
   - sentences:
       - "wie heisst das Lied auf dem Küchenradio"
       - "wie heißt das Lied auf dem Küchenradio"
+      - "wie heisst der song auf dem Küchenradio"
+      - "wie heißt der Song auf dem Küchenradio"
+      - "wie heisst der titel auf dem Küchenradio"
+      - "wie heißt der Titel auf dem Küchenradio"
+      - "Welcher Titel läuft auf dem Küchenradio"
+      - "Was läuft auf dem Küchenradio"
+      - "Welcher Song läuft auf dem Küchenradio"
+      - "Welcher Titel spielt auf dem Küchenradio"
+      - "Was spielt auf dem Küchenradio"
+      - "Welcher Song spielt auf dem Küchenradio"
+      - "Welches Lied spielt auf dem Küchenradio"
+      - "was spielt das Küchenradio"
       - "Welches Lied läuft auf dem Küchenradio"
     intent:
       name: HassGetState
@@ -51,6 +63,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio2"
       - "wie heißt das Lied auf dem Küchenradio2"
       - "Welches Lied läuft auf dem Küchenradio2"
+      - "wie heisst der song auf dem Küchenradio2"
+      - "wie heißt der Song auf dem Küchenradio2"
+      - "wie heisst der titel auf dem Küchenradio2"
+      - "wie heißt der Titel auf dem Küchenradio2"
+      - "Welcher Titel läuft auf dem Küchenradio2"
+      - "Was läuft auf dem Küchenradio2"
+      - "Welcher Song läuft auf dem Küchenradio2"
+      - "Welcher Titel spielt auf dem Küchenradio2"
+      - "Was spielt auf dem Küchenradio2"
+      - "Welcher Song spielt auf dem Küchenradio2"
+      - "Welches Lied spielt auf dem Küchenradio2"
+      - "was spielt das Küchenradio2"
     intent:
       name: HassGetState
       slots:
@@ -62,6 +86,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio6"
       - "wie heißt das Lied auf dem Küchenradio6"
       - "Welches Lied läuft auf dem Küchenradio6"
+      - "wie heisst der song auf dem Küchenradio6"
+      - "wie heißt der Song auf dem Küchenradio6"
+      - "wie heisst der titel auf dem Küchenradio6"
+      - "wie heißt der Titel auf dem Küchenradio6"
+      - "Welcher Titel läuft auf dem Küchenradio6"
+      - "Was läuft auf dem Küchenradio6"
+      - "Welcher Song läuft auf dem Küchenradio6"
+      - "Welcher Titel spielt auf dem Küchenradio6"
+      - "Was spielt auf dem Küchenradio6"
+      - "Welcher Song spielt auf dem Küchenradio6"
+      - "Welches Lied spielt auf dem Küchenradio6"
+      - "was spielt das Küchenradio6"
     intent:
       name: HassGetState
       slots:
@@ -73,6 +109,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio7"
       - "wie heißt das Lied auf dem Küchenradio7"
       - "Welches Lied läuft auf dem Küchenradio7"
+      - "wie heisst der song auf dem Küchenradio7"
+      - "wie heißt der Song auf dem Küchenradio7"
+      - "wie heisst der titel auf dem Küchenradio7"
+      - "wie heißt der Titel auf dem Küchenradio7"
+      - "Welcher Titel läuft auf dem Küchenradio7"
+      - "Was läuft auf dem Küchenradio7"
+      - "Welcher Song läuft auf dem Küchenradio7"
+      - "Welcher Titel spielt auf dem Küchenradio7"
+      - "Was spielt auf dem Küchenradio7"
+      - "Welcher Song spielt auf dem Küchenradio7"
+      - "Welches Lied spielt auf dem Küchenradio7"
+      - "was spielt das Küchenradio7"
     intent:
       name: HassGetState
       slots:
@@ -84,6 +132,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio3"
       - "wie heißt das Lied auf dem Küchenradio3"
       - "Welches Lied läuft auf dem Küchenradio3"
+      - "wie heisst der song auf dem Küchenradio3"
+      - "wie heißt der Song auf dem Küchenradio3"
+      - "wie heisst der titel auf dem Küchenradio3"
+      - "wie heißt der Titel auf dem Küchenradio3"
+      - "Welcher Titel läuft auf dem Küchenradio3"
+      - "Was läuft auf dem Küchenradio3"
+      - "Welcher Song läuft auf dem Küchenradio3"
+      - "Welcher Titel spielt auf dem Küchenradio3"
+      - "Was spielt auf dem Küchenradio3"
+      - "Welcher Song spielt auf dem Küchenradio3"
+      - "Welches Lied spielt auf dem Küchenradio3"
+      - "was spielt das Küchenradio3"
     intent:
       name: HassGetState
       slots:
@@ -95,6 +155,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio4"
       - "wie heißt das Lied auf dem Küchenradio4"
       - "Welches Lied läuft auf dem Küchenradio4"
+      - "wie heisst der song auf dem Küchenradio4"
+      - "wie heißt der Song auf dem Küchenradio4"
+      - "wie heisst der titel auf dem Küchenradio4"
+      - "wie heißt der Titel auf dem Küchenradio4"
+      - "Welcher Titel läuft auf dem Küchenradio4"
+      - "Was läuft auf dem Küchenradio4"
+      - "Welcher Song läuft auf dem Küchenradio4"
+      - "Welcher Titel spielt auf dem Küchenradio4"
+      - "Was spielt auf dem Küchenradio4"
+      - "Welcher Song spielt auf dem Küchenradio4"
+      - "Welches Lied spielt auf dem Küchenradio4"
+      - "was spielt das Küchenradio4"
     intent:
       name: HassGetState
       slots:
@@ -106,6 +178,18 @@ tests:
       - "wie heisst das Lied auf dem Küchenradio5"
       - "wie heißt das Lied auf dem Küchenradio5"
       - "Welches Lied läuft auf dem Küchenradio5"
+      - "wie heisst der song auf dem Küchenradio5"
+      - "wie heißt der Song auf dem Küchenradio5"
+      - "wie heisst der titel auf dem Küchenradio5"
+      - "wie heißt der Titel auf dem Küchenradio5"
+      - "Welcher Titel läuft auf dem Küchenradio5"
+      - "Was läuft auf dem Küchenradio5"
+      - "Welcher Song läuft auf dem Küchenradio5"
+      - "Welcher Titel spielt auf dem Küchenradio5"
+      - "Was spielt auf dem Küchenradio5"
+      - "Welcher Song spielt auf dem Küchenradio5"
+      - "Welches Lied spielt auf dem Küchenradio5"
+      - "was spielt das Küchenradio5"
     intent:
       name: HassGetState
       slots:
@@ -117,6 +201,18 @@ tests:
       - "wie heisst das Lied auf dem Lautsprecher"
       - "wie heißt das Lied auf dem Lautsprecher"
       - "Welches Lied läuft auf dem Lautsprecher"
+      - "wie heisst der song auf dem Lautsprecher"
+      - "wie heißt der Song auf dem Lautsprecher"
+      - "wie heisst der titel auf dem Lautsprecher"
+      - "wie heißt der Titel auf dem Lautsprecher"
+      - "Welcher Titel läuft auf dem Lautsprecher"
+      - "Was läuft auf dem Lautsprecher"
+      - "Welcher Song läuft auf dem Lautsprecher"
+      - "Welcher Titel spielt auf dem Lautsprecher"
+      - "Was spielt auf dem Lautsprecher"
+      - "Welcher Song spielt auf dem Lautsprecher"
+      - "Welches Lied spielt auf dem Lautsprecher"
+      - "was spielt der Lautsprecher"
     intent:
       name: HassGetState
       slots:
@@ -128,6 +224,18 @@ tests:
       - "wie heisst das Lied auf dem Lautsprecher2"
       - "wie heißt das Lied auf dem Lautsprecher2"
       - "Welches Lied läuft auf dem Lautsprecher2"
+      - "wie heisst der song auf dem Lautsprecher2"
+      - "wie heißt der Song auf dem Lautsprecher2"
+      - "wie heisst der titel auf dem Lautsprecher2"
+      - "wie heißt der Titel auf dem Lautsprecher2"
+      - "Welcher Titel läuft auf dem Lautsprecher2"
+      - "Was läuft auf dem Lautsprecher2"
+      - "Welcher Song läuft auf dem Lautsprecher2"
+      - "Welcher Titel spielt auf dem Lautsprecher2"
+      - "Was spielt auf dem Lautsprecher2"
+      - "Welcher Song spielt auf dem Lautsprecher2"
+      - "Welches Lied spielt auf dem Lautsprecher2"
+      - "was spielt der Lautsprecher2"
     intent:
       name: HassGetState
       slots:
@@ -139,6 +247,18 @@ tests:
       - "wie heisst das Lied auf dem Lautsprecher3"
       - "wie heißt das Lied auf dem Lautsprecher3"
       - "Welches Lied läuft auf dem Lautsprecher3"
+      - "wie heisst der song auf dem Lautsprecher3"
+      - "wie heißt der Song auf dem Lautsprecher3"
+      - "wie heisst der titel auf dem Lautsprecher3"
+      - "wie heißt der Titel auf dem Lautsprecher3"
+      - "Welcher Titel läuft auf dem Lautsprecher3"
+      - "Was läuft auf dem Lautsprecher3"
+      - "Welcher Song läuft auf dem Lautsprecher3"
+      - "Welcher Titel spielt auf dem Lautsprecher3"
+      - "Was spielt auf dem Lautsprecher3"
+      - "Welcher Song spielt auf dem Lautsprecher3"
+      - "Welches Lied spielt auf dem Lautsprecher3"
+      - "was spielt der Lautsprecher3"
     intent:
       name: HassGetState
       slots:
@@ -150,6 +270,18 @@ tests:
       - "wie heisst das Lied auf dem Lautsprecher4"
       - "wie heißt das Lied auf dem Lautsprecher4"
       - "Welches Lied läuft auf dem Lautsprecher4"
+      - "wie heisst der song auf dem Lautsprecher4"
+      - "wie heißt der Song auf dem Lautsprecher4"
+      - "wie heisst der titel auf dem Lautsprecher4"
+      - "wie heißt der Titel auf dem Lautsprecher4"
+      - "Welcher Titel läuft auf dem Lautsprecher4"
+      - "Was läuft auf dem Lautsprecher4"
+      - "Welcher Song läuft auf dem Lautsprecher4"
+      - "Welcher Titel spielt auf dem Lautsprecher4"
+      - "Was spielt auf dem Lautsprecher4"
+      - "Welcher Song spielt auf dem Lautsprecher4"
+      - "Welches Lied spielt auf dem Lautsprecher4"
+      - "was spielt der Lautsprecher4"
     intent:
       name: HassGetState
       slots:
@@ -161,6 +293,18 @@ tests:
       - "wie heisst das Lied auf dem TV"
       - "wie heißt das Lied auf dem TV"
       - "Welches Lied läuft auf dem TV"
+      - "wie heisst der song auf dem TV"
+      - "wie heißt der Song auf dem TV"
+      - "wie heisst der titel auf dem TV"
+      - "wie heißt der Titel auf dem TV"
+      - "Welcher Titel läuft auf dem TV"
+      - "Was läuft auf dem TV"
+      - "Welcher Song läuft auf dem TV"
+      - "Welcher Titel spielt auf dem TV"
+      - "Was spielt auf dem TV"
+      - "Welcher Song spielt auf dem TV"
+      - "Welches Lied spielt auf dem TV"
+      - "was spielt der TV"
     intent:
       name: HassGetState
       slots:
@@ -172,6 +316,18 @@ tests:
       - "wie heisst das Lied auf der Soundbar"
       - "wie heißt das Lied auf der Soundbar"
       - "Welches Lied läuft auf der Soundbar"
+      - "wie heisst der song auf der Soundbar"
+      - "wie heißt der Song auf der Soundbar"
+      - "wie heisst der titel auf der Soundbar"
+      - "wie heißt der Titel auf der Soundbar"
+      - "Welcher Titel läuft auf der Soundbar"
+      - "Was läuft auf der Soundbar"
+      - "Welcher Song läuft auf der Soundbar"
+      - "Welcher Titel spielt auf der Soundbar"
+      - "Was spielt auf der Soundbar"
+      - "Welcher Song spielt auf der Soundbar"
+      - "Welches Lied spielt auf der Soundbar"
+      - "was spielt die Soundbar"
     intent:
       name: HassGetState
       slots:
