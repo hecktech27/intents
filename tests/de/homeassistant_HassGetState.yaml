@@ -35,7 +35,9 @@ tests:
         name: "Radio"
     response: "Radio hat keinen Lautstärke-Wert"
 
+  # tests for paused with title and artist
   - sentences:
+      - "wie heisst das Lied auf dem Küchenradio"
       - "wie heißt das Lied auf dem Küchenradio"
       - "Welches Lied läuft auf dem Küchenradio"
     intent:
@@ -43,6 +45,138 @@ tests:
       slots:
         name: "Küchenradio"
     response: "Enter Sandman von Metallica wurde auf Küchenradio pausiert."
+
+  # tests for paused with title only
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio2"
+      - "wie heißt das Lied auf dem Küchenradio2"
+      - "Welches Lied läuft auf dem Küchenradio2"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio2"
+    response: "Enter Sandman wurde auf Küchenradio2 pausiert."
+
+  # tests for paused with artist only
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio6"
+      - "wie heißt das Lied auf dem Küchenradio6"
+      - "Welches Lied läuft auf dem Küchenradio6"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio6"
+    response: "Metallica wurde auf Küchenradio6 pausiert."
+
+  # tests for paused without info
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio7"
+      - "wie heißt das Lied auf dem Küchenradio7"
+      - "Welches Lied läuft auf dem Küchenradio7"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio7"
+    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+
+  # tests for buffering with artist only
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio3"
+      - "wie heißt das Lied auf dem Küchenradio3"
+      - "Welches Lied läuft auf dem Küchenradio3"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio3"
+    response: "Metallica wird auf Küchenradio3 geladen."
+
+  # tests for buffering with title only
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio4"
+      - "wie heißt das Lied auf dem Küchenradio4"
+      - "Welches Lied läuft auf dem Küchenradio4"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio4"
+    response: "Enter Sandman wird auf Küchenradio4 geladen."
+
+  # tests for buffering with artist and title
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio5"
+      - "wie heißt das Lied auf dem Küchenradio5"
+      - "Welches Lied läuft auf dem Küchenradio5"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio5"
+    response: "Enter Sandman von Metallica wird auf Küchenradio5 geladen."
+
+  # tests for playing with artist and title
+  - sentences:
+      - "wie heisst das Lied auf dem Lautsprecher"
+      - "wie heißt das Lied auf dem Lautsprecher"
+      - "Welches Lied läuft auf dem Lautsprecher"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Lautsprecher"
+    response: "Es läuft Enter Sandman von Metallica."
+
+  # tests for playing with title only
+  - sentences:
+      - "wie heisst das Lied auf dem Lautsprecher2"
+      - "wie heißt das Lied auf dem Lautsprecher2"
+      - "Welches Lied läuft auf dem Lautsprecher2"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Lautsprecher2"
+    response: "Es läuft Enter Sandman."
+
+  # tests for playing with artist only
+  - sentences:
+      - "wie heisst das Lied auf dem Lautsprecher3"
+      - "wie heißt das Lied auf dem Lautsprecher3"
+      - "Welches Lied läuft auf dem Lautsprecher3"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Lautsprecher3"
+    response: "Es läuft Metallica."
+
+  # tests for playing without info
+  - sentences:
+      - "wie heisst das Lied auf dem Lautsprecher4"
+      - "wie heißt das Lied auf dem Lautsprecher4"
+      - "Welches Lied läuft auf dem Lautsprecher4"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Lautsprecher4"
+    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+
+  # tests for state=idle
+  - sentences:
+      - "wie heisst das Lied auf dem TV"
+      - "wie heißt das Lied auf dem TV"
+      - "Welches Lied läuft auf dem TV"
+    intent:
+      name: HassGetState
+      slots:
+        name: "TV"
+    response: "Tv spielt derzeit nichts ab."
+
+  # tests for state=off
+  - sentences:
+      - "wie heisst das Lied auf der Soundbar"
+      - "wie heißt das Lied auf der Soundbar"
+      - "Welches Lied läuft auf der Soundbar"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Soundbar"
+    response: "Soundbar spielt derzeit nichts ab."
 
   - sentences:
       - "wie ist die Wohnzimmertemperatur?"

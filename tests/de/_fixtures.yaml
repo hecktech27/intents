@@ -376,6 +376,13 @@ entities:
       volume_level: "0.6"
       media_artist: "Metallica"
 
+  - name: "Lautsprecher4"
+    id: "media_player.speaker4"
+    state: "playing"
+    area: bedroom
+    attributes:
+      volume_level: "0.6"
+
   - name: "Küchenradio2"
     id: "media_player.kitchen_radio2"
     state: "paused"
@@ -391,6 +398,38 @@ entities:
     attributes:
       volume_level: "0.6"
       media_artist: "Metallica"
+
+  - name: "Küchenradio4"
+    id: "media_player.kitchen_radio4"
+    state: "buffering"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+      media_title: "Enter Sandman"
+
+  - name: "Küchenradio5"
+    id: "media_player.kitchen_radio5"
+    state: "buffering"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+      media_artist: "Metallica"
+      media_title: "Enter Sandman"
+
+  - name: "Küchenradio6"
+    id: "media_player.kitchen_radio6"
+    state: "paused"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+      media_artist: "Metallica"
+
+  - name: "Küchenradio7"
+    id: "media_player.kitchen_radio7"
+    state: "paused"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
 
   - name: "Radio"
     id: "media_player.radio"
