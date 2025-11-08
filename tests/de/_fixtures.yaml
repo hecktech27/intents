@@ -342,6 +342,40 @@ entities:
     attributes:
       volume_level: "0.5"
 
+  - name: "Lautsprecher"
+    id: "media_player.speaker"
+    state: "playing"
+    area: bedroom
+    attributes:
+      volume_level: "0.6"
+      media_title: "Enter Sandman"
+      media_artist: Metallica
+
+  - name: "Küchenradio"
+    id: "media_player.kitchen_radio"
+    state: "paused"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+      media_title: "Enter Sandman"
+      media_artist: Metallica
+
+  - name: "Lautsprecher2"
+    id: "media_player.speaker2"
+    state: "playing"
+    area: bedroom
+    attributes:
+      volume_level: "0.6"
+      media_title: "Enter Sandman"
+
+  - name: "Küchenradio2"
+    id: "media_player.kitchen_radio2"
+    state: "paused"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+      media_title: "Enter Sandman"
+
   - name: "Radio"
     id: "media_player.radio"
     state: "idle"
