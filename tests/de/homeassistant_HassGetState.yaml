@@ -196,6 +196,29 @@ tests:
         name: "Küchenradio5"
     response: "Enter Sandman von Metallica wird auf Küchenradio5 geladen."
 
+  # tests for buffering without info
+  - sentences:
+      - "wie heisst das Lied auf dem Küchenradio8"
+      - "wie heißt das Lied auf dem Küchenradio8"
+      - "Welches Lied läuft auf dem Küchenradio8"
+      - "wie heisst der song auf dem Küchenradio8"
+      - "wie heißt der Song auf dem Küchenradio8"
+      - "wie heisst der titel auf dem Küchenradio8"
+      - "wie heißt der Titel auf dem Küchenradio8"
+      - "Welcher Titel läuft auf dem Küchenradio8"
+      - "Was läuft auf dem Küchenradio8"
+      - "Welcher Song läuft auf dem Küchenradio8"
+      - "Welcher Titel spielt auf dem Küchenradio8"
+      - "Was spielt auf dem Küchenradio8"
+      - "Welcher Song spielt auf dem Küchenradio8"
+      - "Welches Lied spielt auf dem Küchenradio8"
+      - "was spielt das Küchenradio8"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio8"
+    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+
   # tests for playing with artist and title
   - sentences:
       - "wie heisst das Lied auf dem Lautsprecher"

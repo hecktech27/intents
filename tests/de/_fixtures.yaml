@@ -431,6 +431,13 @@ entities:
     attributes:
       volume_level: "0.6"
 
+  - name: "Küchenradio8"
+    id: "media_player.kitchen_radio8"
+    state: "buffering"
+    area: kitchen
+    attributes:
+      volume_level: "0.6"
+
   - name: "Radio"
     id: "media_player.radio"
     state: "idle"
