@@ -20,6 +20,14 @@ intents:
             - media_player
 
       - sentences:
+          - "wie hei(ss|ß)t das Lied auf <name>"
+          - "welches Lied läuft [gerade ]auf <name>"
+        response: get_media_name
+        requires_context:
+          domain:
+            - media_player
+
+      - sentences:
           - "ist <name> {on_off_states:state}[ <area_floor>]"
           - "ist <name>[ <area_floor>] {on_off_states:state}"
           - "ist[ <area_floor>] <name> {on_off_states:state}"

@@ -36,6 +36,15 @@ tests:
     response: "Radio hat keinen Lautstärke-Wert"
 
   - sentences:
+      - "wie heißt das Lied auf dem Küchenradio"
+      - "Welches Lied läuft auf dem Küchenradio"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Küchenradio"
+    response: "Enter Sandman von Metallica wurde auf Küchenradio pausiert."
+
+  - sentences:
       - "wie ist die Wohnzimmertemperatur?"
     intent:
       name: HassGetState

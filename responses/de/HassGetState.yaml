@@ -96,11 +96,11 @@ responses:
 
         {% elif state_name == "paused" %}
           {% if title and artist %}
-            {{ title }} von {{ artist }} wurde pausiert.
+            {{ title }} von {{ artist }} wurde auf {{ slots.name | capitalize }} pausiert.
           {% elif title %}
-            {{ title }} wurde pausiert.
+            {{ title }} wurde auf {{ slots.name | capitalize }} pausiert.
           {% elif artist %}
-            {{ artist }} wurde pausiert.
+            {{ artist }} wurde auf {{ slots.name | capitalize }} pausiert.
           {% else %}
             Es sind keine Informationen über Titel oder Künstler verfügbar.
           {% endif %}
@@ -109,27 +109,24 @@ responses:
           {% if title and artist %}
             Es läuft {{ title }} von {{ artist }}.
           {% elif title %}
-            Es läuft {{ title .
+            Es läuft {{ title }}.
           {% elif artist %}
             Es läuft {{ artist }}.
           {% else %}
             Es sind keine Informationen über Titel oder Künstler verfügbar.
           {% endif %}
 
-        {% else %}
-          {{ slots.name | capitalize }} hat einen unbekannten Status ({{ state_name }}).
-        {% endif %}
-
         {% elif state_name == "buffering" %}
           {% if title and artist %}
-            {{ title }} von {{ artist }} wird geladen.
+            {{ title }} von {{ artist }} wird auf {{ slots.name | capitalize }} geladen.
           {% elif title %}
-            {{ title }} wird geladen.
+            {{ title }} wird auf {{ slots.name | capitalize }} geladen.
           {% elif artist %}
-            {{ artist }} wird geladen.
+            {{ artist }} wird auf {{ slots.name | capitalize }} geladen.
           {% else %}
             Es sind keine Informationen über Titel oder Künstler verfügbar.
           {% endif %}
+        {% endif %}
 
       get_volume: |
         {% if 'volume_level' in state.attributes %}
