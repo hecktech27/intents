@@ -52,6 +52,8 @@ tests:
       - "Welches Lied spielt auf dem Küchenradio"
       - "was spielt das Küchenradio"
       - "Welches Lied läuft auf dem Küchenradio"
+      - "Was läuft im Küchenradio"
+      - "Welcher Titel läuft im Küchenradio"
     intent:
       name: HassGetState
       slots:
