@@ -56,7 +56,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio"
-    response: "Enter Sandman von Metallica wurde auf Küchenradio pausiert."
+    response: "Enter Sandman von Metallica ist derzeit pausiert"
 
   # tests for paused with title only
   - sentences:
@@ -79,7 +79,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio2"
-    response: "Enter Sandman wurde auf Küchenradio2 pausiert."
+    response: "Enter Sandman ist derzeit pausiert"
 
   # tests for paused with artist only
   - sentences:
@@ -102,7 +102,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio6"
-    response: "Metallica wurde auf Küchenradio6 pausiert."
+    response: "Metallica ist derzeit pausiert"
 
   # tests for paused without info
   - sentences:
@@ -125,7 +125,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio7"
-    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+    response: "Keine Informationen verfügbar"
 
   # tests for buffering with artist only
   - sentences:
@@ -148,7 +148,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio3"
-    response: "Metallica wird auf Küchenradio3 geladen."
+    response: "Metallica lädt derzeit"
 
   # tests for buffering with title only
   - sentences:
@@ -171,7 +171,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio4"
-    response: "Enter Sandman wird auf Küchenradio4 geladen."
+    response: "Enter Sandman lädt derzeit"
 
   # tests for buffering with artist and title
   - sentences:
@@ -194,7 +194,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio5"
-    response: "Enter Sandman von Metallica wird auf Küchenradio5 geladen."
+    response: "Enter Sandman von Metallica lädt derzeit"
 
   # tests for buffering without info
   - sentences:
@@ -217,7 +217,7 @@ tests:
       name: HassGetState
       slots:
         name: "Küchenradio8"
-    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+    response: "Keine Informationen verfügbar"
 
   # tests for playing with artist and title
   - sentences:
@@ -240,7 +240,7 @@ tests:
       name: HassGetState
       slots:
         name: "Lautsprecher"
-    response: "Es läuft Enter Sandman von Metallica."
+    response: "Enter Sandman von Metallica"
 
   # tests for playing with title only
   - sentences:
@@ -263,7 +263,7 @@ tests:
       name: HassGetState
       slots:
         name: "Lautsprecher2"
-    response: "Es läuft Enter Sandman."
+    response: "Enter Sandman"
 
   # tests for playing with artist only
   - sentences:
@@ -286,7 +286,7 @@ tests:
       name: HassGetState
       slots:
         name: "Lautsprecher3"
-    response: "Es läuft Metallica."
+    response: "Metallica"
 
   # tests for playing without info
   - sentences:
@@ -309,7 +309,7 @@ tests:
       name: HassGetState
       slots:
         name: "Lautsprecher4"
-    response: "Es sind keine Informationen über Titel oder Künstler verfügbar."
+    response: "Keine Informationen verfügbar"
 
   # tests for state=idle
   - sentences:
@@ -332,7 +332,7 @@ tests:
       name: HassGetState
       slots:
         name: "TV"
-    response: "Tv spielt derzeit nichts ab."
+    response: "Tv spielt derzeit nichts ab"
 
   # tests for state=off
   - sentences:
@@ -355,7 +355,7 @@ tests:
       name: HassGetState
       slots:
         name: "Soundbar"
-    response: "Soundbar spielt derzeit nichts ab."
+    response: "Soundbar spielt derzeit nichts ab"
 
   - sentences:
       - "wie Hell ist die Stehlampe"
