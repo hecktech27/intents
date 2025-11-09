@@ -20,8 +20,8 @@ intents:
             - media_player
 
       - sentences:
-          - "wie hei(ss|ß)t (das Lied|der song|der titel) auf <name>"
-          - "(welches Lied|welcher song|welcher titel|was) (läuft|spielt) auf <name>"
+          - "wie hei(ss|ß)t (das lied|der song|der titel) (auf <name>|im {name})"
+          - "(was|welches lied|welcher song|welcher titel) (läuft|spielt) (auf <name>|im {name})"
           - "was spielt <name>"
         response: get_media_name
         requires_context:
