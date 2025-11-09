@@ -87,45 +87,19 @@ responses:
         {% endif %}
 
       get_media_name: |
-        {% set state_name = state.state %}
         {% set title = state.attributes.media_title | default(None) %}
         {% set artist = state.attributes.media_artist | default(None) %}
-
-        {% if state_name in ["off", "idle"] %}
-          {{ slots.name | capitalize }} spielt derzeit nichts ab.
-
-        {% elif state_name == "paused" %}
-          {% if title and artist %}
-            {{ title }} von {{ artist }} wurde auf {{ slots.name | capitalize }} pausiert.
-          {% elif title %}
-            {{ title }} wurde auf {{ slots.name | capitalize }} pausiert.
-          {% elif artist %}
-            {{ artist }} wurde auf {{ slots.name | capitalize }} pausiert.
-          {% else %}
-            Es sind keine Informationen über Titel oder Künstler verfügbar.
-          {% endif %}
-
-        {% elif state_name == "playing" %}
-          {% if title and artist %}
-            Es läuft {{ title }} von {{ artist }}.
-          {% elif title %}
-            Es läuft {{ title }}.
-          {% elif artist %}
-            Es läuft {{ artist }}.
-          {% else %}
-            Es sind keine Informationen über Titel oder Künstler verfügbar.
-          {% endif %}
-
-        {% elif state_name == "buffering" %}
-          {% if title and artist %}
-            {{ title }} von {{ artist }} wird auf {{ slots.name | capitalize }} geladen.
-          {% elif title %}
-            {{ title }} wird auf {{ slots.name | capitalize }} geladen.
-          {% elif artist %}
-            {{ artist }} wird auf {{ slots.name | capitalize }} geladen.
-          {% else %}
-            Es sind keine Informationen über Titel oder Künstler verfügbar.
-          {% endif %}
+        {% set result = (title and artist) and (title ~ " von " ~ artist) or (title or artist) or None %}
+        {% if state.state in ["off", "idle"] %}
+          {{ slots.name | capitalize }} spielt derzeit nichts ab
+        {% elif not result %}
+          Keine Informationen verfügbar
+        {% elif state.state == "paused" %}
+          {{ result }} ist derzeit pausiert
+        {% elif state.state == "buffering" %}
+          {{ result }} lädt derzeit
+        {% else %}
+          {{ result }}
         {% endif %}
 
       get_volume: |
