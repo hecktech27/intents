@@ -131,3 +131,27 @@ responses:
         {% else %}
           {{ slots.name | capitalize }} hat keinen Farbtemperatur-Wert
         {% endif %}
+
+      sun_dusk: |
+        {% set dusk = state_attr('sun.sun', 'next_dusk') %}
+        {% set diff = as_timestamp(dusk) - as_timestamp(now()) %}
+        {% set diff_abs = diff | abs %}
+        {% set hours = (diff_abs // 3600) | int %}
+        {% set minutes = ((diff_abs % 3600) // 60) | int %}
+
+        {% if dusk %}
+          {% if diff > 0 %}
+            {% set parts = [] %}
+            {% if hours > 0 %}
+              {% set parts = parts + [hours ~ ' Stunde' ~ ('n' if hours != 1 else '')] %}
+            {% endif %}
+            {% if minutes > 0 %}
+              {% set parts = parts + [minutes ~ ' Minute' ~ ('n' if minutes != 1 else '')] %}
+            {% endif %}
+            In {{ parts | join(' und ') }}
+          {% else %}
+            Die Sonne ist bereits untergegangen.
+          {% endif %}
+        {% else %}
+          Keine Informationen verfügbar.
+        {% endif %}
