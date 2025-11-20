@@ -339,6 +339,8 @@ hu:
       text-to-speech:
         piper: true
         cloud: true
+hy:
+  nativeName: հայերեն
 id:
   nativeName: Bahasa Indonesia
   support:
@@ -696,6 +698,8 @@ sw:
       text-to-speech:
         piper: false
         cloud: true
+ta:
+  nativeName: தமிழ்
 te:
   nativeName: తెలుగు
   support:
