@@ -37,3 +37,4 @@ intents:
           - "wann läuft (der|mein) (<timer_start>|{area}) timer ab"
           - "wann läuft (der|mein) Timer <area> ab"
           - "wann ist [(der|mein) ]{timer_name:name} Timer (zu ende|fertig)"
+          - "wann (ist|sind) [(der|die|das|mein|meine) ]{timer_name:name} fertig"
