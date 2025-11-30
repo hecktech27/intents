@@ -175,8 +175,11 @@ tests:
       - "wann ist das Pizza fertig"
       - "wann ist mein Pizza fertig"
       - "wann ist meine Pizza fertig"
+      - "wann ist unser Pizza fertig"
+      - "wann ist unsere Pizza fertig"
       - "wann sind meine Pizza fertig"
       - "wann sind die Pizza fertig"
+      - "wann sind unsere Pizza fertig"
     intent:
       name: HassTimerStatus
       slots:
