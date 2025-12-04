@@ -35,6 +35,36 @@ tests:
         name: "Radio"
     response: "Radio hat keinen Lautstärke-Wert"
 
+  - sentences:
+      - "wie laut ist der Akkulautsprecher im Wohnzimmer"
+      - "Lautstärke des Akkulautsprecher im Wohnzimmer"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        area: Wohnzimmer
+    response: "Akkulautsprecher ist auf 60 % eingestellt"
+
+  - sentences:
+      - "wie laut ist der Akkulautsprecher in der Küche"
+      - "Lautstärke des Akkulautsprecher in der Küche"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        area: Küche
+    response: "Akkulautsprecher ist auf 50 % eingestellt"
+
+  - sentences:
+      - "wie laut ist der Akkulautsprecher im Obergeschoss"
+      - "Lautstärke des Akkulautsprecher im Obergeschoss"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        floor: Obergeschoss
+    response: "Akkulautsprecher ist auf 40 % eingestellt"
+
   # tests for paused with title and artist
   - sentences:
       - "wie heisst das Lied auf dem Küchenradio"
@@ -359,9 +389,84 @@ tests:
         name: "Soundbar"
     response: "Soundbar spielt derzeit nichts ab"
 
+  # tests for playing with artist and title and area1
+  - sentences:
+      - "wie heisst das Lied auf dem Akkulautsprecher im Wohnzimmer"
+      - "wie heißt das Lied auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welches Lied läuft auf dem Akkulautsprecher im Wohnzimmer"
+      - "wie heisst der song auf dem Akkulautsprecher im Wohnzimmer"
+      - "wie heißt der Song auf dem Akkulautsprecher im Wohnzimmer"
+      - "wie heisst der titel auf dem Akkulautsprecher im Wohnzimmer"
+      - "wie heißt der Titel auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welcher Titel läuft auf dem Akkulautsprecher im Wohnzimmer"
+      - "Was läuft auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welcher Song läuft auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welcher Titel spielt auf dem Akkulautsprecher im Wohnzimmer"
+      - "Was spielt auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welcher Song spielt auf dem Akkulautsprecher im Wohnzimmer"
+      - "Welches Lied spielt auf dem Akkulautsprecher im Wohnzimmer"
+      - "was spielt der Akkulautsprecher im Wohnzimmer"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        area: "Wohnzimmer"
+    response: "AC/DC"
+
+  # tests for playing with artist and title and area2
+  - sentences:
+      - "wie heisst das Lied auf dem Akkulautsprecher in der Küche"
+      - "wie heißt das Lied auf dem Akkulautsprecher in der Küche"
+      - "Welches Lied läuft auf dem Akkulautsprecher in der Küche"
+      - "wie heisst der song auf dem Akkulautsprecher in der Küche"
+      - "wie heißt der Song auf dem Akkulautsprecher in der Küche"
+      - "wie heisst der titel auf dem Akkulautsprecher in der Küche"
+      - "wie heißt der Titel auf dem Akkulautsprecher in der Küche"
+      - "Welcher Titel läuft auf dem Akkulautsprecher in der Küche"
+      - "Was läuft auf dem Akkulautsprecher in der Küche"
+      - "Welcher Song läuft auf dem Akkulautsprecher in der Küche"
+      - "Welcher Titel spielt auf dem Akkulautsprecher in der Küche"
+      - "Was spielt auf dem Akkulautsprecher in der Küche"
+      - "Welcher Song spielt auf dem Akkulautsprecher in der Küche"
+      - "Welches Lied spielt auf dem Akkulautsprecher in der Küche"
+      - "was spielt der Akkulautsprecher in der Küche"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        area: "Küche"
+    response: "Enter Sandman von Metallica"
+
+  # tests for playing with title and floor
+  - sentences:
+      - "wie heisst das Lied auf dem Akkulautsprecher im Obergeschoss"
+      - "wie heißt das Lied auf dem Akkulautsprecher im Obergeschoss"
+      - "Welches Lied läuft auf dem Akkulautsprecher im Obergeschoss"
+      - "wie heisst der song auf dem Akkulautsprecher im Obergeschoss"
+      - "wie heißt der Song auf dem Akkulautsprecher im Obergeschoss"
+      - "wie heisst der titel auf dem Akkulautsprecher im Obergeschoss"
+      - "wie heißt der Titel auf dem Akkulautsprecher im Obergeschoss"
+      - "Welcher Titel läuft auf dem Akkulautsprecher im Obergeschoss"
+      - "Was läuft auf dem Akkulautsprecher im Obergeschoss"
+      - "Welcher Song läuft auf dem Akkulautsprecher im Obergeschoss"
+      - "Welcher Titel spielt auf dem Akkulautsprecher im Obergeschoss"
+      - "Was spielt auf dem Akkulautsprecher im Obergeschoss"
+      - "Welcher Song spielt auf dem Akkulautsprecher im Obergeschoss"
+      - "Welches Lied spielt auf dem Akkulautsprecher im Obergeschoss"
+      - "was spielt der Akkulautsprecher im Obergeschoss"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Akkulautsprecher"
+        floor: "Obergeschoss"
+    response: "Schlafmusik"
+
   - sentences:
       - "wie Hell ist die Stehlampe"
       - "Helligkeit Stehlampe"
+      - "Auf wie viel Prozent ist die Stehlampe gestellt"
+      - "Auf wie viel Prozent ist die Stehlampe eingestellt"
+      - "Auf wie viel % ist die Stehlampe gedimmt"
     intent:
       name: HassGetState
       slots:
@@ -371,6 +476,9 @@ tests:
   - sentences:
       - "wie Hell ist die Wohnzimmerlampe"
       - "Helligkeit Wohnzimmerlampe"
+      - "Auf wie viel Prozent ist die Wohnzimmerlampe gestellt"
+      - "Auf wie viel Prozent ist die Wohnzimmerlampe eingestellt"
+      - "Auf wie viel % ist die Wohnzimmerlampe gedimmt"
     intent:
       name: HassGetState
       slots:
@@ -380,6 +488,9 @@ tests:
   - sentences:
       - "wie Hell ist die Schlafzimmerlampe"
       - "Helligkeit Schlafzimmerlampe"
+      - "Auf wie viel Prozent ist die Schlafzimmerlampe gestellt"
+      - "Auf wie viel Prozent ist die Schlafzimmerlampe eingestellt"
+      - "Auf wie viel % ist die Schlafzimmerlampe gedimmt"
     intent:
       name: HassGetState
       slots:
@@ -387,7 +498,80 @@ tests:
     response: "Schlafzimmerlampe hat keinen Dimmer-Wert"
 
   - sentences:
+      - "wie Hell ist die Tischlampe im Wohnzimmer"
+      - "Helligkeit der Tischlampe im Wohnzimmer"
+      - "Auf wie viel Prozent ist die Tischlampe im Wohnzimmer gestellt"
+      - "Auf wie viel Prozent ist die Tischlampe im Wohnzimmer eingestellt"
+      - "Auf wie viel % ist die Tischlampe im Wohnzimmer gedimmt"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        area: Wohnzimmer
+    response: "Tischlampe ist auf 39 % eingestellt"
+
+  - sentences:
+      - "wie Hell ist die Tischlampe in der Küche"
+      - "Helligkeit der Tischlampe in der Küche"
+      - "Auf wie viel Prozent ist die Tischlampe in der Küche gestellt"
+      - "Auf wie viel Prozent ist die Tischlampe in der Küche eingestellt"
+      - "Auf wie viel % ist die Tischlampe in der Küche gedimmt"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        area: Küche
+    response: "Tischlampe ist auf 94 % eingestellt"
+
+  - sentences:
+      - "wie Hell ist die Tischlampe im Obergeschoss"
+      - "Helligkeit der Tischlampe im Obergeschoss"
+      - "Auf wie viel Prozent ist die Tischlampe im Obergeschoss gestellt"
+      - "Auf wie viel Prozent ist die Tischlampe im Obergeschoss eingestellt"
+      - "Auf wie viel % ist die Tischlampe im Obergeschoss gedimmt"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        floor: Obergeschoss
+    response: "Tischlampe ist auf 16 % eingestellt"
+
+  - sentences:
+      - "Auf welche Farbtemperatur ist die Tischlampe im Wohnzimmer eingestellt"
+      - "Auf wie viel Kelvin ist die Tischlampe im Wohnzimmer eingestellt"
+      - "Farbtemperatur der Tischlampe im Wohnzimmer"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        area: Wohnzimmer
+    response: "Tischlampe ist auf 2700 Kelvin eingestellt"
+
+  - sentences:
+      - "Auf welche Farbtemperatur ist die Tischlampe in der Küche eingestellt"
+      - "Auf wie viel Kelvin ist die Tischlampe in der Küche eingestellt"
+      - "Farbtemperatur der Tischlampe in der Küche"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        area: Küche
+    response: "Tischlampe ist auf 4000 Kelvin eingestellt"
+
+  - sentences:
+      - "Auf welche Farbtemperatur ist die Tischlampe im Obergeschoss eingestellt"
+      - "Auf wie viel Kelvin ist die Tischlampe im Obergeschoss eingestellt"
+      - "Farbtemperatur der Tischlampe im Obergeschoss"
+    intent:
+      name: HassGetState
+      slots:
+        name: "Tischlampe"
+        floor: Obergeschoss
+    response: "Tischlampe ist auf 2900 Kelvin eingestellt"
+
+  - sentences:
       - "Auf welche Farbtemperatur ist die Stehlampe eingestellt"
+      - "Auf wie viel Kelvin ist die Stehlampe eingestellt"
       - "Farbtemperatur Stehlampe"
     intent:
       name: HassGetState
@@ -397,6 +581,7 @@ tests:
 
   - sentences:
       - "Auf welche Farbtemperatur ist die Wohnzimmerlampe eingestellt"
+      - "Auf wie viel Kelvin ist die Wohnzimmerlampe eingestellt"
       - "Farbtemperatur Wohnzimmerlampe"
     intent:
       name: HassGetState
@@ -406,6 +591,7 @@ tests:
 
   - sentences:
       - "Auf welche Farbtemperatur ist die Schlafzimmerlampe eingestellt"
+      - "Auf wie viel Kelvin ist die Schlafzimmerlampe eingestellt"
       - "Farbtemperatur Schlafzimmerlampe"
     intent:
       name: HassGetState
@@ -562,7 +748,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "Schlafzimmerlampe und Stehlampe"
+    response: "Schlafzimmerlampe, Stehlampe, Tischlampe und 2 weitere"
 
   - sentences:
       - "welche Lampen im Obergeschoss sind aus?"
@@ -601,7 +787,7 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "2"
+    response: "5"
 
   - sentences:
       - "wie viele Lampen sind an im Schlafzimmer?"
@@ -612,7 +798,7 @@ tests:
         area: "Schlafzimmer"
         domain: "light"
         state: "on"
-    response: "1"
+    response: "2"
 
   - sentences:
       - "wie viele Lampen sind an im Obergeschoss?"
@@ -623,7 +809,7 @@ tests:
         floor: "Obergeschoss"
         domain: "light"
         state: "on"
-    response: "1"
+    response: "2"
 
   - sentences:
       - "wie viele Lampen sind aus im Schlafzimmer?"
