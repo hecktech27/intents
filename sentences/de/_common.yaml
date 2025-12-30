@@ -553,7 +553,7 @@ lists:
     values:
       - in: "([den ]künstler|[die ]künstlerin|[den ]sänger|[die ]sängerin|[die ]band|Musik von)"
         out: "artist"
-      - in: "[das ]album"
+      - in: "([das ]album|[die ]platte)"
         out: "album"
       - in: "([den ]track|[die ]nummer|[das ]lied)"
         out: "track"
