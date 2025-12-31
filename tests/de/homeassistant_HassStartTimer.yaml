@@ -30,6 +30,7 @@ tests:
       - "einen Timer für 2 Stunden erstellen"
       - "einen Timer für 2 Stunden einstellen"
       - "einen Timer für 2 Stunden Starten"
+      - "stelle einen 2 Stunden Timer ein"
     intent:
       name: HassStartTimer
       slots:
@@ -65,6 +66,7 @@ tests:
       - "einen Timer für 1 Stunde erstellen"
       - "einen Timer für 1 Stunde einstellen"
       - "einen Timer für 1 Stunde Starten"
+      - "stelle einen 1 Stunde Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -93,6 +95,7 @@ tests:
       - "einen Timer für 1 Stunde und 15 Minuten erstellen"
       - "einen Timer für 1 Stunde und 15 Minuten einstellen"
       - "einen Timer für 1 Stunde und 15 Minuten Starten"
+      - "stelle einen 1 Stunde und 15 Minuten Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -121,6 +124,7 @@ tests:
       - "einen Timer für 1 Stunde und 30 Sekunden erstellen"
       - "einen Timer für 1 Stunde und 30 Sekunden einstellen"
       - "einen Timer für 1 Stunde und 30 Sekunden Starten"
+      - "stell einen 1 Stunde 30 Sekunden Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -149,6 +153,7 @@ tests:
       - "einen Timer für 1 Stunde, 15 Minuten und 30 Sekunden erstellen"
       - "einen Timer für 1 Stunde, 15 Minuten und 30 Sekunden einstellen"
       - "einen Timer für 1 Stunde, 15 Minuten und 30 Sekunden Starten"
+      - "stelle einen 1 Stunde 15 Minuten und 30 Sekunden Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -179,6 +184,7 @@ tests:
       - "einen Timer für 5 Minuten erstellen"
       - "einen Timer für 5 Minuten einstellen"
       - "einen Timer für 5 Minuten Starten"
+      - "stell einen 5 Minuten Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -329,6 +335,7 @@ tests:
       - "Timer für 5 Minuten und 10 Sekunden erstellen"
       - "einen Timer für 5 Minuten und 10 Sekunden erstellen"
       - "einen Timer für 5 Minuten und 10 Sekunden Starten"
+      - "stelle einen 5 Minuten und 10 Sekunden Timer ein"
     intent:
       name: HassStartTimer
       context:
@@ -358,6 +365,7 @@ tests:
       - "einen Timer für 45 Sekunden erstellen"
       - "einen Timer für 45 Sekunden einstellen"
       - "einen Timer für 45 Sekunden Starten"
+      - "stelle einen 45 Sekunden Timer ein"
     intent:
       name: HassStartTimer
       context:
