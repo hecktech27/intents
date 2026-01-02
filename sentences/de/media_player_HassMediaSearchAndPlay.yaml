@@ -9,9 +9,9 @@ intents:
           - "{media_class} {search_query} [<hier> ]<starten_end_of_sentence>"
           - "<hier> {media_class} {search_query} <starten_end_of_sentence>"
           - "spiel[e][ <hier>] {search_query}[ ab]"
-          - "spiel[e] {search_query}[ <hier>][ ab]"
+          - "spiel[e] {search_query} <hier>[ ab]"
           - "[<hier> ]{search_query} <starten_end_of_sentence>"
-          - "{search_query} [<hier> ]<starten_end_of_sentence>"
+          - "{search_query} <hier> <starten_end_of_sentence>"
         requires_context:
           area:
             slot: true
