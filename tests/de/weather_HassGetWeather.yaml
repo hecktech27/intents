@@ -36,6 +36,8 @@ tests:
   - sentences:
       - "wie warm ist es draußen"
       - "wie warm ist es draussen"
+      - "wie kalt ist es draußen"
+      - "wie kalt ist es draussen"
     intent:
       name: HassGetWeather
     response: 8 °C

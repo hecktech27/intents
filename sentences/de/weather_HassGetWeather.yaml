@@ -13,5 +13,5 @@ intents:
         requires_context:
           domain: weather
       - sentences:
-          - "wie warm ist es [dr]au(ss|ß)en"
+          - "wie (warm|kalt) ist es [dr]au(ss|ß)en"
         response: outside_temp
