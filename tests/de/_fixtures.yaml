@@ -534,6 +534,7 @@ entities:
     state: "on"
     attributes:
       latest_version: 2025.12.5
+      device_class: "firmware"
 
 timers:
   - is_active: false

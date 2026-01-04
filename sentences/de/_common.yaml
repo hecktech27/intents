@@ -391,10 +391,10 @@ lists:
         out: "locked"
       - in: "(nicht ((((ab|zu)ge|ver)schlossen|([ab|zu]ge|ver)sperrt)|verriegelt)|ent(riegelt|sperrt)|aufge(sperrt|schlossen))"
         out: "unlocked"
-  update_domains:
+  update_device_classes:
     values:
       - in: "([Firmware ]Update[s]|[Firmware ]Aktualisierung[en])"
-        out: "update"
+        out: "firmware"
   update_states:
     values:
       - in: "(verfügbar|bereit)"

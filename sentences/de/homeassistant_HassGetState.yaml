@@ -82,11 +82,11 @@ intents:
 
       # Updates
       - sentences:
-          - "(sind|stehen)[ <irgend>] {update_domains:domain} {update_states:state}"
+          - "(sind|stehen)[ <irgend>] {update_device_classes:device_class} {update_states:state}"
         response: irgendeins_update
       - sentences:
-          - "<wieviel> {update_domains:domain} (sind|stehen) {update_states:state}"
+          - "<wieviel> {update_device_classes:device_class} (sind|stehen) {update_states:state}"
         response: wie_viele
       - sentences:
-          - "welche {update_domains:domain} (sind|stehen) {update_states:state}"
+          - "welche {update_device_classes:device_class} (sind|stehen) {update_states:state}"
         response: welches_update
