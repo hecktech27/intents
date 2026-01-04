@@ -393,8 +393,10 @@ lists:
         out: "unlocked"
   update_device_classes:
     values:
-      - in: "([Firmware ]Update[s]|[Firmware ]Aktualisierung[en])"
+      - in: "[(Firmware|Software)[ ]](Update[s]|Aktualisierung[en])"
         out: "firmware"
+      - in: "Geräte[ ](Update[s]|Aktualisierung[en])"
+        out: "update"
   update_states:
     values:
       - in: "(verfügbar|bereit)"
