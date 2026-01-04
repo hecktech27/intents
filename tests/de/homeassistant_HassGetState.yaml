@@ -842,6 +842,12 @@ tests:
       - "stehen irgendwelche Updates bereit"
       - "stehen Updates bereit"
       - "stehen Aktualisierungen bereit"
+      - "sind irgendwelche Firmware Updates verfügbar"
+      - "sind Firmware Updates verfügbar"
+      - "sind Firmware Aktualisierungen verfügbar"
+      - "stehen irgendwelche Firmware Updates bereit"
+      - "stehen Firmware Updates bereit"
+      - "stehen Firmware Aktualisierungen bereit"
     intent:
       name: HassGetState
       slots:
@@ -854,6 +860,10 @@ tests:
       - "welche aktualisierungen sind verfügbar"
       - "welche updates stehen bereit"
       - "welche aktualisierungen stehen bereit"
+      - "welche Firmware updates sind verfügbar"
+      - "welche Firmware aktualisierungen sind verfügbar"
+      - "welche Firmware updates stehen bereit"
+      - "welche Firmware aktualisierungen stehen bereit"
     intent:
       name: HassGetState
       slots:
@@ -866,6 +876,10 @@ tests:
       - "wie viele aktualisierungen sind verfügbar"
       - "wie viele updates stehen bereit"
       - "wie viele aktualisierungen stehen bereit"
+      - "wie viele Firmware Updates sind verfügbar"
+      - "wie viele Firmware aktualisierungen sind verfügbar"
+      - "wie viele Firmware updates stehen bereit"
+      - "wie viele Firmware aktualisierungen stehen bereit"
     intent:
       name: HassGetState
       slots:

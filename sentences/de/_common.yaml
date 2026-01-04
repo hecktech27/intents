@@ -393,7 +393,7 @@ lists:
         out: "unlocked"
   update_domains:
     values:
-      - in: "(Update[s]|Aktualisierung[en])"
+      - in: "([Firmware ]Update[s]|[Firmware ]Aktualisierung[en])"
         out: "update"
   update_states:
     values:
