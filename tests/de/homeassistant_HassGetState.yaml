@@ -834,3 +834,41 @@ tests:
         domain: "light"
         state: "off"
     response: "1"
+
+  - sentences:
+      - "sind irgendwelche Updates verfügbar"
+      - "sind Updates verfügbar"
+      - "sind Aktualisierungen verfügbar"
+      - "stehen irgendwelche Updates bereit"
+      - "stehen Updates bereit"
+      - "stehen Aktualisierungen bereit"
+    intent:
+      name: HassGetState
+      slots:
+        domain: "update"
+        state: "on"
+    response: "Ja, Home Assistant Core"
+
+  - sentences:
+      - "welche updates sind verfügbar"
+      - "welche aktualisierungen sind verfügbar"
+      - "welche updates stehen bereit"
+      - "welche aktualisierungen stehen bereit"
+    intent:
+      name: HassGetState
+      slots:
+        domain: "update"
+        state: "on"
+    response: "Home Assistant Core"
+
+  - sentences:
+      - "wie viele Updates sind verfügbar"
+      - "wie viele aktualisierungen sind verfügbar"
+      - "wie viele updates stehen bereit"
+      - "wie viele aktualisierungen stehen bereit"
+    intent:
+      name: HassGetState
+      slots:
+        domain: "update"
+        state: "on"
+    response: "1"
