@@ -623,7 +623,7 @@ tests:
       name: HassGetState
       slots:
         name: "WohnzimmertemperaturF"
-    response: "Wohnzimmertemperaturf ist 73,5 °F"
+    response: "Wohnzimmertemperaturf ist 73,5 Grad"
 
   - sentences:
       - "ist die Schlafzimmerlampe aus?"

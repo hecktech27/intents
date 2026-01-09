@@ -5,7 +5,7 @@ responses:
       einzeln: |
         {% if state.state|float(state.state) is number %}
           {% set localized_rounded = state.state | float | round(1) | replace(".",",") | replace(",0","") %}
-          {{ slots.name | capitalize }} ist {{ state.state_with_unit | replace(state.state, localized_rounded) | replace("°C","Grad") }}
+          {{ slots.name | capitalize }} ist {{ state.state_with_unit | replace(state.state, localized_rounded) | replace("°C","Grad") | replace("°F","Grad") }}
         {% else %}
           {{ slots.name | capitalize }} ist {{ state.state_with_unit | replace(".", ",") | replace(",0","") }}
         {% endif %}

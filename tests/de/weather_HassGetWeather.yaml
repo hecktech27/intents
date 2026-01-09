@@ -25,13 +25,14 @@ tests:
         name: Berlin
     response: 8 Grad und regnerisch
 
+  # check °F conversion
   - sentences:
       - "wie ist das Los Angeles Wetter?"
     intent:
       name: HassGetWeather
       slots:
         name: Los Angeles
-    response: 77 °F und klar
+    response: 77 Grad und klar
 
   - sentences:
       - "wie warm ist es draußen"
