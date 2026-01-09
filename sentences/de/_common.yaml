@@ -623,8 +623,8 @@ expansion_rules:
   schliessen_end_of_sentence: "(schlie(ß|ss)en|zumachen|zu machen)"
   öffnen_end_of_sentence: "(öffnen|aufmachen|auf machen)"
   schalten: "(schalt[e|et])"
-  machen: "(mach[e|t])"
-  fahren: "(fahr[e|t])"
+  machen: "(mach[e]|<stt_fix_machen>)"
+  fahren: "(fahr[e]|<stt_fix_fahren>)"
   setzen: "(<setze>|<stelle>)"
   setze: "(setz[e]|änder[e]|veränder[e])"
   stelle: "stell[e]"
@@ -695,6 +695,10 @@ expansion_rules:
   co_sensor: "<co>[-]Sensor[en]"
   gas_sensor: "Gas[-]Sensor[en]"
 
+  # ToDo-Lists
+  meine_liste_dativ: "[(meiner|unserer|der) ]({name}[([ ]|s[ ]|-)Liste]|[Liste ]{name})"
+  meine_liste_akkusativ: "[(meine|unsere|die) ]({name}[([ ]|s[ ]|-)Liste]|[Liste ]{name})"
+
   # Timers
   timer_set: "(starte|setze|<stelle>|<erstelle>)"
   timer_set_end_of_sentence: "(starten|setzen|[er|ein]stellen)"
@@ -733,7 +737,12 @@ expansion_rules:
   stt_fix_aus_im: "ausm"
   # fix for "Setz[e] ... auf die Liste"
   stt_fix_setze: "setzt"
-
+  # fix for "Schreib[e] ... auf die Liste"
+  stt_fix_schreib: "schreibt"
+  # fix for "mach[e]"
+  stt_fix_machen: "macht"
+  # fix for "fahr[e]"
+  stt_fix_fahren: "fahrt"
 skip_words:
   - "bitte"
   - "danke"
