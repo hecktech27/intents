@@ -12,7 +12,9 @@ tests:
       - Entferne Milch von unserer Liste
       - Entferne Milch von der Liste
       - Lösche Milch von der Einkaufsliste
+      - Lösch Milch von der Einkaufsliste
       - Streiche Milch von meiner Einkaufsliste
+      - Streich Milch von meiner Einkaufsliste
       - Streiche Milch von unserer Einkaufsliste
       #- (entferne|lösche|streiche) <item> (von|auf|aus) <mein_einkauf_dativ>
       - Entferne Milch von meinem Einkauf

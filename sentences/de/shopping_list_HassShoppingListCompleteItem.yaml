@@ -3,7 +3,7 @@ intents:
   HassShoppingListCompleteItem:
     data:
       - sentences:
-          - (entferne|lösche|streiche) <item> (von|auf|aus) <meine_einkaufsliste_dativ>
+          - (entferne|lösch[e]|streich[e]) <item> (von|auf|aus) <meine_einkaufsliste_dativ>
           - (nimm|nehm[e]||lösch[e]|streich[e]) <item> aus <mein_einkauf_dativ> raus
           - (nimm|nehm[e]||lösch[e]|streich[e]) <item> von <mein_einkauf_dativ> runter
           - (entferne|lösche|streiche) <item> (von|auf|aus) <mein_einkauf_dativ>

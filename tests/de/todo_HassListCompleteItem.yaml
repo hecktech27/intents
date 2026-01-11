@@ -4,6 +4,7 @@ tests:
       # (entferne|lösche) <item> (von|auf|aus) <meine_liste_dativ>
       - entferne Putzen von meiner Liste Haushalt
       - lösche Putzen von meiner Liste Haushalt
+      - lösch Putzen von meiner Liste Haushalt
       - streich Putzen von meiner Liste Haushalt
       - entferne Putzen auf meiner Liste Haushalt
       - lösche Putzen auf meiner Liste Haushalt
