@@ -113,10 +113,19 @@ tests:
       - Milch von meinem Einkauf runter nehmen
       - Milch von dem Einkauf runternehmen
       - Milch von unserem Einkauf nehmen
+      # <item> aus <mein_einkauf_dativ> [raus[ ]]nehmen
+      - Milch aus meinem Einkauf raus nehmen
+      - Milch aus dem Einkauf rausnehmen
+      - Milch aus unserem Einkauf nehmen
       # <item> von <meine_einkaufsliste_dativ> [runter[ ]]nehmen
       - Milch von meiner Einkaufsliste runter nehmen
       - Milch von meiner Einkaufs Liste runternehmen
       - Milch von meiner Einkaufsliste nehmen
+      # <item> aus <meine_einkaufsliste_dativ> [raus[ ]]nehmen
+      - Milch aus meiner Einkaufsliste raus nehmen
+      - Milch aus meiner Einkaufs Liste rausnehmen
+      - Milch aus meiner Einkaufsliste nehmen
+
     intent:
       name: HassShoppingListCompleteItem
       slots:

@@ -70,6 +70,10 @@ tests:
       - Putzen von meiner Haushaltsliste runter nehmen
       - Putzen von meiner Liste Haushalt nehmen
       - Putzen von meiner Haushaltsliste runternehmen
+      # <item> aus <meine_liste_dativ> [raus[ ]]nehmen
+      - Putzen aus meiner Haushaltsliste raus nehmen
+      - Putzen aus meiner Liste Haushalt nehmen
+      - Putzen aus meiner Haushaltsliste rausnehmen
     intent:
       name: HassListCompleteItem
       slots:
