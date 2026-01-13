@@ -634,7 +634,8 @@ expansion_rules:
   volume: "{volume_level}[ (Prozent|%)]"
   im_bereich: "[((in|auf)[ <artikel_bestimmt>]|im)] {zone:state}"
   im_zuhause: "(zu Hause|[im ]Zuhause)"
-  temperature: "{temperature}[ ][°|Grad]"
+  #  temperature: "{temperature}[ ][°|Grad]"
+  temperature: "{temperature}[ ][°[ ][C]|Grad[ Celsius]]"
 
   # cover
   rollladen: "Roll[l](a|ä)den"
