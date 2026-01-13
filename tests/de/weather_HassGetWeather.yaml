@@ -44,6 +44,7 @@ tests:
       - "wie viel Grad haben wir außen"
       - "wie viel ° haben wir draußen"
       - "wie viel Grad haben wir draussen"
+      - "wieviel Grad haben wir draussen"
     intent:
       name: HassGetWeather
     response: 8 Grad
@@ -55,6 +56,7 @@ tests:
       - "wie viel ° sind es in Berlin"
       - "wie viel Grad haben wir in Berlin"
       - "wie viel ° haben wir in Berlin"
+      - "wieviel ° haben wir in Berlin"
     intent:
       name: HassGetWeather
       slots:
