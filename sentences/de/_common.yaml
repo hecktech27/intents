@@ -660,7 +660,13 @@ expansion_rules:
   lichtes: "([des ](Licht[s]|Lichtes)|[der ](Lampe|Beleuchtung))"
   lichtes_mit_artikel: "(des (Licht[s]|Lichtes)|der (Lampe|Beleuchtung))"
   lichter: "([(die|der) ]Lichter|[von den ]Lichtern|[(die|der|von den) ](Lampen|Leuchten|Beleuchtungen))"
-  alle_lichter: "((<alle>|<alle_genitiv>) ((Lichter|Lampen|Leuchten|Beleuchtungen)|Beleuchtung)|von allen (Lichtern|Lampen|Leuchten|Beleuchtungen))"
+  alle_lichter: "(<alle> (Lichter|Lampen|Leuchten|Beleuchtungen)|die (ganze|komplette|sämtliche|gesamte) Beleuchtung)"
+  alle_lichter_genitiv: "(<alle_genitiv> (Lichter|Lampen|Leuchten|Beleuchtungen)|von allen (Lichtern|Lampen|Leuchten|Beleuchtungen))"
+  # alte exp:
+  # alle_lichter: "((<alle>|<alle_genitiv>) ((Lichter|Lampen|Leuchten|Beleuchtungen)|Beleuchtung)|von allen (Lichtern|Lampen|Leuchten|Beleuchtungen))"
+  # ref: <alle>/<alle_genitiv>
+  # alle: "((alle|sämtliche)|jede[r|s|n]|die (ganze|komplette|sämtliche|gesamte)|die (ganzen|kompletten|sämtlichen|gesamten))"
+  # alle_genitiv: "((alle|sämtliche)(r| der)|jede[r|s|n] der|die (ganzen|kompletten|sämtlichen|gesamten) der|der (ganzen|kompletten|sämtlichen|gesamten)[ der])"
   alle_lichter_ueberall: "(<alle_lichter>|überall (<licht>|<lichter>)|(<licht>|<lichter>) überall)"
   leuchten_lassen: "([er]leuchten lassen|[ein]färben)"
 
