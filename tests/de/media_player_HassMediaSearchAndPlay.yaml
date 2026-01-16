@@ -529,6 +529,31 @@ tests:
     response: "Wiedergabe wird gestartet"
 
   - sentences:
+      - "spiel den Podcast Hobbylos auf der Soundbar"
+      - "spiele den Podcast Hobbylos auf der Soundbar"
+      - "spiele meinen Podcast Hobbylos auf der Soundbar"
+      - "spiele unseren Podcast Hobbylos auf der Soundbar"
+      - "spiel meinen Podcast Hobbylos auf der Soundbar"
+      - "spiel meinen Hobbylos Podcast auf der Soundbar ab"
+      - "spiele auf der Soundbar unseren Hobbylos Podcast ab"
+      - "spiele unseren Hobbylos Podcast auf der Soundbar ab"
+      - "spiele unseren Hobbylos Podcast auf der Soundbar"
+      - "meinen Podcast Hobbylos auf der Soundbar abspielen"
+      - "unseren Podcast Hobbylos auf der Soundbar spielen"
+      - "meinen Hobbylos Podcast auf der Soundbar spielen"
+      - "unseren Hobbylos Podcast auf der Soundbar abspielen"
+      - "auf der Soundbar meinen Hobbylos Podcast spielen"
+      - "auf der Soundbar unseren Hobbylos Podcast spielen"
+      - "könntest du auf der Soundbar unseren Hobbylos Podcast abspielen"
+    intent:
+      name: "HassMediaSearchAndPlay"
+      slots:
+        search_query: "Hobbylos"
+        media_class: "podcast"
+        name: "Soundbar"
+    response: "Wiedergabe wird gestartet"
+
+  - sentences:
       - "spiele den Film Planet der Affen"
       - "spiele den Film Planet der Affen hier im Raum"
       - "spiele den Film Planet der Affen hier im Zimmer"
