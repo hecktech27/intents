@@ -325,6 +325,7 @@ tests:
       - Schlafzimmer auf 11 % helligkeit
       - Schlafzimmer auf 11 Prozent Helligkeit einstellen
       - Schlafzimmer auf 11 Prozent Helligkeit stellen
+      - ich würde gerne das Licht im Schlafzimmer auf 11% dimmen
     intent:
       name: HassLightSet
       slots:
