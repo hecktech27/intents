@@ -11,3 +11,4 @@ intents:
           - "abbrechen"
           - "Abbruch"
           - "[doch ](nicht[s]|nix)"
+          - "nein[ danke]"

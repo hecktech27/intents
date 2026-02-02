@@ -14,6 +14,8 @@ tests:
       - "alles ok"
       - "das hast du falsch verstanden"
       - "nicht du"
+      - "nein"
+      - "nein danke"
     intent:
       name: HassNevermind
     response: ""
