@@ -754,3 +754,12 @@ tests:
         color: blue
         area: Schlafzimmer
     response: Farbe eingestellt
+
+  # color temperature by name
+  - sentences:
+      - Stelle die Stehlampe auf 2900 Kelvin
+    intent:
+      name: HassLightSet
+      slots:
+        name: Stehlampe
+    response: Farbtemperatur eingestellt

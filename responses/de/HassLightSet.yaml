@@ -4,3 +4,4 @@ responses:
     HassLightSet:
       brightness: "Helligkeit eingestellt"
       color: "Farbe eingestellt"
+      coltemp: "Farbtemperatur eingestellt"

@@ -413,6 +413,18 @@ lists:
       type: "temperature"
       from: 0
       to: 100
+  color_temperature:
+    range:
+      from: 1000
+      to: 10000
+  color_temperature_names:
+    values:
+      - in: "Warm[ ]wei(ß|ss)"
+        out: 2600
+      - in: "Kalt[ ]wei(ß|ss)"
+        out: 5000
+      - in: "Tageslicht"
+        out: 5000
   # binary_sensor
   bs_battery_states:
     values:
@@ -662,6 +674,7 @@ expansion_rules:
 
   # light
   brightness: "{brightness}[ (Prozent|%)]"
+  col_temp: "[auf ]({color_temperature:temperature}[[ ](K|Kelvin)]|{color_temperature_names:temperature})"
   licht: "([das ]Licht|[die ]Lampe|[die ]Beleuchtung)"
   licht_ohne_artikel: "(Licht|Lampe|Beleuchtung)"
   lichtes: "([des ](Licht[s]|Lichtes)|[der ](Lampe|Beleuchtung))"

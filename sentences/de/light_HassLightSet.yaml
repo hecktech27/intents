@@ -109,3 +109,31 @@ intents:
         expansion_rules:
           beim_licht: "(Bei[ de]m Licht|Bei der Beleuchtung|Bei den (Lichtern|Lampen|Leuchten|Beleuchtungen))"
           bei_allen_lichtern: "Bei ((allen|sämtlichen)[ der]|den (ganzen|kompletten|gesamten)[ der]) (Lichter|Lampen|Leuchten|Beleuchtungen)"
+      # coltemp - by name
+      - sentences:
+          - "[<setze> ][[die ]Farbtemperatur [(von|vom) ]]<name> <col_temp>"
+          - "<stelle> [[die ]Farbtemperatur [(von|vom) ]]<name> <col_temp>[ ein]"
+          - "[[die ]Farbtemperatur [(von|vom) ]]<name> <col_temp> <setzen_end_of_sentence>"
+          - "[(von|vom) ]<name> [die ]Farbtemperatur <col_temp>[ <setzen_end_of_sentence>]"
+        requires_context:
+          domain: light
+        response: coltemp
+
+      # coltemp - by area/floor
+      - sentences:
+          - "[<setze> ][[die ]Farbtemperatur [(von|vom) ]]<area_floor> <col_temp>"
+          - "<stelle> [[die ]Farbtemperatur [(von|vom) ]]<area_floor> <col_temp>[ ein]"
+          - "[[die ]Farbtemperatur [(von|vom) ]]<area_floor> <col_temp> <setzen_end_of_sentence>"
+          - "[(von|vom) ]<area_floor> [die ]Farbtemperatur <col_temp>[ <setzen_end_of_sentence>]"
+        response: coltemp
+
+      # coltemp - by satellite area
+      - sentences:
+          - "[<setze> ][[die ]Farbtemperatur ][<hier> ]<col_temp>"
+          - "<stelle> [[die ]Farbtemperatur ][<hier> ]<col_temp>[ ein]"
+          - "[[die ]Farbtemperatur ][<hier> ]<col_temp> <setzen_end_of_sentence>"
+          - "[<hier> ][[die ]Farbtemperatur ]<col_temp>[ <setzen_end_of_sentence>]"
+        response: coltemp
+        requires_context:
+          area:
+            slot: true
