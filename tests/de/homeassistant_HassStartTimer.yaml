@@ -438,6 +438,7 @@ tests:
           - "Das Licht im Wohnzimmer aus"
           - "das Licht im Wohnzimmer aus"
     response: Anweisung wird in 5 Minuten ausgeführt
+
   - sentences:
       - "schalt in 5 Minuten das Licht im Wohnzimmer aus"
       - "schalt nach 5 Minuten das Licht im Wohnzimmer aus"
@@ -449,6 +450,7 @@ tests:
           - "Das Licht im Wohnzimmer aus"
           - "das Licht im Wohnzimmer aus"
     response: Anweisung wird in 5 Minuten ausgeführt
+
   - sentences:
       - "Mache in 5 Minuten das Licht im Wohnzimmer aus"
       - "Mache nach 5 Minuten das Licht im Wohnzimmer aus"
@@ -460,6 +462,7 @@ tests:
           - "Das Licht im Wohnzimmer aus"
           - "das Licht im Wohnzimmer aus"
     response: Anweisung wird in 5 Minuten ausgeführt
+
   - sentences:
       - "mach in 5 Minuten das Licht im Wohnzimmer aus"
       - "mach nach 5 Minuten das Licht im Wohnzimmer aus"
@@ -471,6 +474,7 @@ tests:
           - "Das Licht im Wohnzimmer aus"
           - "das Licht im Wohnzimmer aus"
     response: Anweisung wird in 5 Minuten ausgeführt
+
   - sentences:
       - "Fahre in 5 Minuten Die Rollläden im Wohnzimmer runter"
       - "Fahre nach 5 Minuten Die Rollläden im Wohnzimmer runter"
@@ -482,6 +486,7 @@ tests:
           - "Die Rollläden im Wohnzimmer runter"
           - "die Rollläden im Wohnzimmer runter"
     response: Anweisung wird in 5 Minuten ausgeführt
+
   - sentences:
       - "Fahr in 5 Minuten Die Rollläden im Wohnzimmer runter"
       - "Fahr nach 5 Minuten Die Rollläden im Wohnzimmer runter"
