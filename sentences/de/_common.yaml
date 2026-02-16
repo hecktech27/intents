@@ -538,6 +538,26 @@ lists:
     range:
       from: 1
       to: 100
+  timer_hour_parts_to_minutes:
+    values:
+      - in: "eine viertel Stunde[n]"
+        out: 15
+      - in: "eine Halbe Stunde[n]"
+        out: 30
+      - in: "eine drei[ ]viertel Stunde[n]"
+        out: 45
+      - in: "ein[ ]ein[ ]viertel Stunde[n]"
+        out: 75
+      - in: "ein[ ]ein[ ]halb Stunde[n]|anderthalb Stunde[n]"
+        out: 90
+      - in: "ein[ ]drei[ ]viertel Stunde[n]"
+        out: 105
+      - in: "zwei[ ]ein[ ]halb Stunden"
+        out: 150
+      - in: "drei[ ]ein[ ]halb Stunden"
+        out: 210
+      - in: "vier[ ]ein[ ]halb Stunden"
+        out: 270
   timer_name:
     wildcard: true
   timer_command:
