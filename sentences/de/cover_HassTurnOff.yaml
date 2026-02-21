@@ -7,7 +7,7 @@ intents:
           - <schliessen> <name>[ <area_floor>]
           - <name>[ <area_floor>] <schliessen_end_of_sentence>
           - (<machen>|<fahren>) <name>[ <area_floor>] <zu>
-          - <name>[ <area_floor>] <zu>[[ ](machen|fahren)]
+          - <name>[ <area_floor>] <zu>[([ ]machen| fahren)]
         requires_context:
           domain: cover
         slots:
