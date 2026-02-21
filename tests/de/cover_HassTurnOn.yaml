@@ -30,6 +30,38 @@ tests:
         name: Vorhang rechts
         domain: cover
     response: geöffnet
+  # by name - with area
+  - sentences:
+      - öffne den Vorhang rechts im Wohnzimmer
+      - Vorhang rechts im Wohnzimmer öffnen
+      - mach den Vorhang rechts im Wohnzimmer auf
+      - Vorhang rechts im Wohnzimmer aufmachen
+      - Vorhang rechts im Wohnzimmer auf machen
+      - Vorhang rechts im Wohnzimmer auf fahren
+      - Könntest du bitte den Vorhang rechts im Wohnzimmer öffnen
+    intent:
+      name: HassTurnOn
+      slots:
+        name: Vorhang rechts
+        domain: cover
+        area: Wohnzimmer
+    response: geöffnet
+  # by name - with floor
+  - sentences:
+      - öffne den Vorhang links im Obergeschoss
+      - Vorhang links im Obergeschoss öffnen
+      - mach den Vorhang links im Obergeschoss auf
+      - Vorhang links im Obergeschoss aufmachen
+      - Vorhang links im Obergeschoss auf machen
+      - Vorhang links im Obergeschoss auf fahren
+      - Könntest du bitte den Vorhang links im Obergeschoss öffnen
+    intent:
+      name: HassTurnOn
+      slots:
+        name: Vorhang links
+        floor: Obergeschoss
+        domain: cover
+    response: geöffnet
   # by area
   - sentences:
       - öffne im Garten das Tor
