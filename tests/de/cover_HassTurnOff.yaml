@@ -33,6 +33,38 @@ tests:
         name: Vorhang links
         domain: cover
     response: geschlossen
+  # by name - with area
+  - sentences:
+      - schließe den Vorhang rechts im Wohnzimmer
+      - Vorhang rechts im Wohnzimmer schließen
+      - mach den Vorhang rechts im Wohnzimmer zu
+      - Vorhang rechts im Wohnzimmer zumachen
+      - Vorhang rechts im Wohnzimmer zu machen
+      - Vorhang rechts im Wohnzimmer zu fahren
+      - Könntest du bitte den Vorhang rechts im Wohnzimmer schließen
+    intent:
+      name: HassTurnOff
+      slots:
+        name: Vorhang rechts
+        domain: cover
+        area: Wohnzimmer
+    response: geschlossen
+  # by name - with floor
+  - sentences:
+      - schließe den Vorhang links im Obergeschoss
+      - Vorhang links im Obergeschoss schließen
+      - mach den Vorhang links im Obergeschoss zu
+      - Vorhang links im Obergeschoss zumachen
+      - Vorhang links im Obergeschoss zu machen
+      - Vorhang links im Obergeschoss zu fahren
+      - Könntest du bitte den Vorhang links im Obergeschoss schließen
+    intent:
+      name: HassTurnOff
+      slots:
+        name: Vorhang links
+        floor: Obergeschoss
+        domain: cover
+    response: geschlossen
   # by area
   - sentences:
       - schließe im Garten das Tor
